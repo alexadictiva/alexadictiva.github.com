@@ -39,6 +39,12 @@ h3 {
 .boton {
   background: rgb(51, 48, 48) !important;
 }
+a {
+  color: white;
+}
+.cv {
+  font-size: 25px;
+}
 .footer {
   background-color: black;
 }
