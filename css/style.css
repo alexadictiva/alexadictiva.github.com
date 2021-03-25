@@ -10,12 +10,18 @@ body {
   font-family: "Abel", sans-serif;
   scroll-behavior: smooth;
 }
-header,
+
 #about,
 #contact {
   background-color: rgb(51, 48, 48);
 }
-
+.banner .card {
+  background-color: transparent;
+}
+.col-md-8 div p,
+.contact p {
+  font-size: 1.8rem;
+}
 #contact ul {
   list-style: none;
 }
@@ -43,7 +49,7 @@ a {
 .cv {
   font-size: 25px;
 }
-.footer {
+footer {
   background-color: black;
 }
 .fab,
