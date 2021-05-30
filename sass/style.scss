@@ -1,0 +1,143 @@
+$orange: #f4a727;
+$yellow: #ffd213;
+$black: #000000;
+$soft-red: #d94c3b;
+$blue-blue: #2ca8f2;
+$soft-grey: #c4c4c4;
+$white: #ffffff;
+/*Generals*/
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+:root {
+  font-size: 62.5%;
+}
+body {
+  overflow-x: hidden;
+  font-family: sans-serif;
+  position: relative;
+}
+ul {
+  list-style: none;
+}
+a {
+  text-decoration: none;
+}
+/*HEADER*/
+header {
+  background-color: $yellow;
+  width: 100%;
+  height: 60px;
+
+  .menu {
+    height: 100%;
+    width: 100%;
+    position: relative;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    z-index: 10;
+    label {
+      padding: 0 30px;
+      cursor: pointer;
+    }
+    .menuBotton {
+      display: none;
+    }
+    .navContainer {
+      position: absolute;
+      top: 60px;
+      right: -600px;
+      transition: all 0.5s ease-out;
+
+      .menuContainer {
+        height: 100vh;
+        width: 50vw;
+        background-color: $yellow;
+
+        .menuDropdown {
+          height: 100vh;
+          color: $black;
+          .menuItem {
+            font-size: 1.7rem;
+            line-height: 7rem;
+            padding: 0 0 0 30px;
+            transition: all 0.5s ease-in-out;
+            cursor: pointer;
+            .menuLink {
+              color: $black;
+              transition: all 0.5s ease-in-out;
+            }
+            &:hover {
+              box-shadow: 250px 0 8px $white inset;
+            }
+            &:hover > .menuLink {
+              color: $orange;
+            }
+          }
+        }
+      }
+    }
+    .menuBotton:checked ~ .navContainer {
+      right: 0;
+    }
+  }
+}
+
+/*main*/
+main {
+  position: relative;
+}
+/* .overlayModal {
+  width: 100vw;
+  height: 100vh;
+  background-color: $soft-grey;
+  position: absolute;
+  top: 60px;
+  left: 0;
+  z-index: 500;
+} */
+/*banner*/
+.bannerContainer {
+  display: flex;
+  clip-path: polygon(0 0, 100% 0, 100% 100%, 0 81%);
+  background-color: $orange;
+  margin-bottom: 20px;
+  .bannerPicContainer {
+    width: 40%;
+  }
+  .bannerTittle {
+    width: 60%;
+    padding: 100px 0 0 20px;
+    h1 {
+      font-size: 3rem;
+      line-height: 2.3rem;
+      margin-bottom: 10px;
+    }
+  }
+}
+/*about me*/
+.aboutContainer {
+  .aboutTittle {
+    margin-bottom: 20px;
+    h2 {
+      text-align: center;
+    }
+  }
+  .aboutItems {
+    padding: 20px;
+  }
+}
+.itemDescription {
+  display: none;
+}
+.modalPrueba {
+  display: block;
+  position: absolute;
+  background-color: $orange;
+  width: 70%;
+  height: auto;
+}

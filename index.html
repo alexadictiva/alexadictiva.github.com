@@ -1,463 +1,77 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="en">
   <head>
     <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Lexend+Zetta&display=swap"
-      rel="stylesheet"
-    />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Abel&display=swap"
-      rel="stylesheet"
-    />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Francois+One&display=swap"
-      rel="stylesheet"
-    />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Pathway+Gothic+One&display=swap"
-      rel="stylesheet"
-    />
-    <link
-      rel="stylesheet"
-      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
-      integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk"
-      crossorigin="anonymous"
-    />
-
     <link rel="stylesheet" href="css/style.css" />
-    <script
-      src="https://kit.fontawesome.com/83ef059c2f.js"
-      crossorigin="anonymous"
-    ></script>
-    <title>Libia Pérez</title>
+    <title>L. Alexandra</title>
   </head>
-
   <body>
-    <header class="container my-4">
-      <nav class="navbar navbar-expand-lg navbar-dark">
-        <section
-          class="arriba w-100 d-flex justify-content-between align-items-center"
-        >
-          <button
-            class="navbar-toggler"
-            type="button"
-            data-toggle="collapse"
-            data-target="#navbarText"
-            aria-controls="navbarText"
-            aria-expanded="false"
-            aria-label="Toggle navigation"
-          >
-            <span class="navbar-toggler-icon"></span>
-          </button>
-
-          <h2>Libia A. Pérez</h2>
-        </section>
-
-        <div class="collapse navbar-collapse" id="navbarText">
-          <ul class="navbar-nav mr-auto">
-            <li class="nav-item">
-              <a class="nav-link" href="#">Inicio </a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#about">Conóceme</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#knowledge">Certificados</a>
-            </li>
-            <li class="nav-item">
-              <a href="#projects" class="nav-link">Proyectos</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#contact">Contacto</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link active" href="indexenglish.html">English</a>
-            </li>
-          </ul>
+    <header>
+      <section class="menu">
+        <label for="menuBotton">
+          <img src="./assets/icon/hamburgerMenu.png" alt="" />
+        </label>
+        <input
+          type="checkbox"
+          name="menuBotton"
+          class="menuBotton"
+          id="menuBotton"
+        />
+        <div class="navContainer">
+          <nav class="menuContainer">
+            <ul class="menuDropdown">
+              <li class="menuItem"><a class="menuLink" href="#">HOME</a></li>
+              <li class="menuItem">
+                <a class="menuLink" href="#about">ABOUT</a>
+              </li>
+              <li class="menuItem">
+                <a class="menuLink" href="#experience">EXPERIENCE</a>
+              </li>
+              <li class="menuItem">
+                <a class="menuLink" href="#certificate">CERTIFICATE</a>
+              </li>
+              <li class="menuItem">
+                <a class="menuLink" href="#contact">CONTACT</a>
+              </li>
+            </ul>
+          </nav>
         </div>
-      </nav>
+      </section>
     </header>
     <main>
-      <section class="container banner my-2">
-        <div class="card mb-3">
-          <div class="row align-items-center justify-content-center">
-            <div class="col-md-4">
-              <h2>Frontend Jr.</h2>
-              <img src="img/banner3.jpg" class="img-fluid" alt="My photo" />
-            </div>
-            <div class="col-md-8">
-              <div class="card-body">
-                <p class="card-text">
-                  Mi objetivo es obtener los conocimientos necesarios que mejor
-                  se adapten a las necesidades de los clientes. También, crear
-                  páginas que resuelvan situaciones tecnológicas de empresas que
-                  logren mejorar sus ingresos aplicando métodos convenientes
-                  para el éxito.
-                </p>
-              </div>
-            </div>
-          </div>
+      <section class="bannerContainer">
+        <div class="bannerPicContainer">
+          <img src="./assets/img/img1.png" alt="Alexandra Perez" />
+        </div>
+        <div class="bannerTittle">
+          <h1>Alexandra Pérez B.</h1>
+          <h2>Layout Developer</h2>
         </div>
       </section>
-
-      <section class="container" id="about">
-        <article class="one row">
-          <div class="col-12 col-sm-12 col-md-12 col-lg-9 col-lx-9">
-            <div class="first">
-              <h2 class="mt-2">Sobre Mí</h2>
+      <section class="aboutContainer" id="about">
+        <div class="aboutTittle">
+          <h2>ABOUT ME</h2>
+        </div>
+        <div class="aboutItems">
+          <article class="aboutItem item1">
+            <div class="itemButton" id="itemButton">
+              <button id="buttonModal" onclick="showModal()">About Me</button>
+            </div>
+            <div class="itemDescription" id="itemDescription">
               <p>
-                Nací y crecí en Caracas, Venezuela. Me gradué de la secundaria
-                en el 2006. Cuento con experiencia en la Administración de
-                Empresas y Cobranzas Telefónicas. En el 2017 emigré a la
-                Argentina, desde entonces tengo empleo en Atención al Cliente en
-                la ciudad de Buenos Aires.
-              </p>
-              <p>
-                Me considero una persona autodidacta que ha conseguido hacerse
-                con conocimiento sobre programación y diseño de paginas web.
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas
+                quae optio consectetur repudiandae veritatis perferendis!
+                Officia exercitationem ab, voluptas ea eaque dicta ratione eum,
+                ullam est mollitia, porro praesentium rerum?
               </p>
             </div>
-            <div>
-              <h3 class="text-right">Aprendizaje</h3>
-              <p class="paragraph-right">
-                Estudié Administración de Empresas en el Instituto Universitario
-                de Tegnología y Administración desde el 2013 hasta el 2016 en
-                Caracas, Venezuela. <br />
-                Trabajé durante 6 años en una empresa recuperadora de deudas
-                financieras elaborando reportes y estadísticas en Microsoft
-                Excel.
-              </p>
-              <p class="paragraph-right">
-                Mi incursión en el mundo de la programación comenzó hace 5 años,
-                cuando intenté hacer un messenger interno bidireccional, para
-                facilitar la comunicación entre los gestores de cobranzas de la
-                empresa donde trabajaba y los gerentes de calidad. Luego de
-                llegar a Argentina y entender que el inmigrante no debe tener
-                una única habilidad para mantenerse, comencé a tomar cursos
-                online de diseño y desarrollo Web. Adicionalmente, el poder
-                crear cosas a partir de códigos y demás aprendizajes es la
-                motivación principal. <br />
-                Los primeros 2 años el conocimiento ha sido adquirido gracias a
-                la gran cantidad de información que brinda internet
-                (autodidacta). En el 2020 comencé una tecnicatura en la Escuela
-                de Altos Estudios (EMAE Alpi) en Programación y Diseño web.
-                También cuanto con suscripción anual en la plataforma online de
-                cursos
-                <a href="https://platzi.com/r/alexadictiva/">
-                  <strong> Platzi</strong></a
-                >.
-              </p>
-            </div>
-          </div>
-          <div class="second col-12 col-sm-12 col-md-12 col-lg-3 col-lx-3">
-            <h4 class="mt-2">Habilidades</h4>
-            <ul>
-              <li>HTML5 & CSS3</li>
-              <li>Bootstrap</li>
-              <li>Javascript</li>
-              <li>PHP</li>
-              <li>Git y GitHub</li>
-              <li>Figma</li>
-              <li>Mobile First</li>
-              <li>Responsive Design</li>
-            </ul>
-          </div>
-        </article>
-      </section>
-      <section class="container py-2" id="projects">
-        <h2 class="mt-4 mb-3">Prácticas y Proyectos</h2>
-        <article class="row justify-content-center">
-          <div class="col-12 col-sm-12 col-md-6 col-lg-4 mb-4">
-            <iframe
-              src="https://alexadictiva.github.io/job5/"
-              width="100%"
-              height="500"
-              scrolling="auto"
-              frameborder="0"
-            >
-            </iframe>
-            <p class="text-center">
-              <a
-                class="badge badge-success"
-                target="blank"
-                href="https://github.com/alexadictiva/job5"
-              >
-                Repositorio Github
-              </a>
-              <a
-                class="badge badge-info"
-                target="blank"
-                href="https://www.figma.com/file/yAmAJS8rB87E4P46fAiCEa/Solo-359"
-              >
-                Proyecto Figma
-              </a>
-            </p>
-          </div>
-
-          <div class="col-12 col-sm-12 col-md-6 col-lg-4 mb-4">
-            <iframe
-              src="https://alexadictiva.github.io/job4/"
-              width="100%"
-              height="500"
-              scrolling="auto"
-              frameborder="0"
-            >
-            </iframe>
-            <p class="text-center">
-              <a
-                class="badge badge-success"
-                target="blank"
-                href="https://cargotruck.us/"
-              >
-                Sitio Oficial
-              </a>
-              <a
-                class="badge badge-info"
-                target="blank"
-                href="https://www.figma.com/file/YSP2sQuEz3643i2DkKAIWe/CargoTruck"
-              >
-                Proyecto en Figma
-              </a>
-            </p>
-          </div>
-          <div class="col-12 col-sm-12 col-md-6 col-lg-4 mb-4">
-            <iframe
-              src="https://alexadictiva.github.io/MobileFirstCourse/"
-              width="100%"
-              height="500"
-              scrolling="auto"
-              frameborder="0"
-            >
-            </iframe>
-            <p class="text-center">
-              <a
-                class="badge badge-success"
-                target="blank"
-                href="https://batatabit.vercel.app/#details"
-              >
-                Sitio Oficial
-              </a>
-            </p>
-          </div>
-          <div class="col-12 col-sm-12 col-md-6 col-lg-4 mb-4">
-            <iframe
-              src="https://alexadictiva.github.io/songandfilm/"
-              width="100%"
-              height="500"
-              scrolling="auto"
-              frameborder="0"
-            ></iframe>
-            <p class="text-center">
-              <a
-                class="badge badge-warning"
-                target="blank"
-                href="https://alexadictiva.github.io/songandfilm/"
-                >Repositorio de Prueba
-              </a>
-            </p>
-          </div>
-          <div class="col-12 col-sm-12 col-md-6 col-lg-4 mb-4">
-            <iframe
-              src="https://alexadictiva.github.io/Brownoutstudio/"
-              width="100%"
-              height="500"
-              scrolling="auto"
-              frameborder="0"
-            ></iframe>
-            <p class="text-center">
-              <a
-                class="badge badge-success"
-                target="blank"
-                href="https://www.brownoutstudios.com/"
-                >Sitio Oficial</a
-              >
-            </p>
-          </div>
-          <div class="col-12 col-sm-12 col-md-6 col-lg-4 mb-4">
-            <iframe
-              src="https://alexadictiva.github.io/fastly/"
-              width="100%"
-              height="500"
-              scrolling="auto"
-              frameborder="0"
-            ></iframe>
-            <p class="text-center">
-              <a
-                class="badge badge-warning"
-                target="blank"
-                href="https://github.com/alexadictiva/fastly"
-                >Repositorio de Prueba</a
-              >
-            </p>
-          </div>
-        </article>
-      </section>
-      <section class="container" id="knowledge">
-        <h2 class="mt-4 mb-3">Certificados y Cursos</h2>
-        <article class="row justify-content-center">
-          <div class="col-12 col-sm-12 col-md-6 col-lg-3 mb-4">
-            <a
-              href="https://platzi.com/@alexadictiva/curso/1640-frontend-developer/diploma/detalle/"
-              target="_blank"
-            >
-              <img
-                src="img/knowledge1.jpg"
-                class="img-fluid"
-                alt="Certificado Platzi de Curso Frontend"
-              />
-            </a>
-            <a class="badge badge-info">Curso de Frontend Developer</a>
-            <a class="badge badge-success">Platzi</a>
-          </div>
-          <div class="col-12 col-sm-12 col-md-6 col-lg-3 mb-4">
-            <a
-              href="https://platzi.com/@alexadictiva/curso/1815-ecmascript-6/diploma/detalle/"
-              target="_blank"
-            >
-              <img
-                src="img/knowledge2.jpg"
-                class="img-fluid"
-                alt="Certificado Platzi de Curso ES6"
-              />
-            </a>
-            <a class="badge badge-info">Curso de Ecmascript 6</a>
-            <a class="badge badge-success">Platzi</a>
-          </div>
-          <div class="col-12 col-sm-12 col-md-6 col-lg-3 mb-4">
-            <a
-              href="https://platzi.com/@alexadictiva/curso/1789-asincronismo-js/diploma/detalle/"
-              target="_blank"
-            >
-              <img
-                src="img/knowledge5.jpg"
-                class="img-fluid"
-                alt="Certificado Platzi de Asincronismo en JavaScript"
-              />
-            </a>
-            <a class="badge badge-info">Curso de Asincronismo en JacaScript</a>
-            <a class="badge badge-success">Platzi</a>
-          </div>
-
-          <div class="col-12 col-sm-12 col-md-6 col-lg-3 mb-4">
-            <a
-              href="https://ed.team/@alexadictiva/curso/html-old"
-              target="_blank"
-            >
-              <img
-                src="img/knowledge6.jpg"
-                class="img-fluid"
-                alt="Certificado EdTeam de HTML"
-              />
-            </a>
-            <a class="badge badge-info">Curso de HTML</a>
-            <a class="badge badge-success">EdTeam</a>
-          </div>
-
-          <div class="col-12 col-sm-12 col-md-6 col-lg-3 mb-4">
-            <a
-              href="https://ed.team/@alexadictiva/curso/css-old"
-              target="_blank"
-            >
-              <img
-                src="img/knowledge7.jpg"
-                class="img-fluid"
-                alt="Certificado EdTeam Curso de CSS3"
-              />
-            </a>
-            <a class="badge badge-info">Curso de CSS</a>
-            <a class="badge badge-success">EdTeam</a>
-          </div>
-          <div class="col-12 col-sm-12 col-md-6 col-lg-3 mb-4">
-            <a
-              href="https://ed.team/@alexadictiva/curso/javascript-old"
-              target="_blank"
-            >
-              <img
-                src="img/knowledge8.jpg"
-                class="img-fluid"
-                alt="Certificado EdTeam Curso de JavaScript"
-              />
-            </a>
-            <a class="badge badge-info">Curso de JavaScript</a>
-            <a class="badge badge-success">EdTeam</a>
-          </div>
-        </article>
-      </section>
-
-      <section class="contact p-5" id="contact">
-        <h2 class="my-3">Contacto</h2>
-        <p>
-          Puedes contactarme en cualquier momento a través de mi
-          <a href="mailto:alexandra220790gmail.com">
-            <strong> Correo Electrónico</strong></a
-          >.
-        </p>
-        <p>
-          También puedes descargar mi curriculum
-          <a href="CV-Libia-A-Perez-B-Dev.pdf">
-            <strong> haciendo click en este enlace</strong></a
-          >.
-        </p>
+          </article>
+        </div>
       </section>
     </main>
-    <footer>
-      <section class="container mt-2 p-4">
-        <div class="row align-items-center">
-          <div class="col-3 col-md-2">
-            <p class="text-center">
-              <a
-                href="https://www.linkedin.com/in/libia-perez-714686172/"
-                target="_blank"
-                ><i class="fab fa-linkedin-in"></i>
-              </a>
-            </p>
-          </div>
-          <div class="col-3 col-md-2">
-            <p class="text-center">
-              <a href="https://twitter.com/alexAdictiva" target="_blank"
-                ><i class="fab fa-twitter"></i>
-              </a>
-            </p>
-          </div>
-          <div class="col-3 col-md-2">
-            <p class="text-center">
-              <a href="mailto:alexandra220790@gmail.com" target="_blank"
-                ><i class="fas fa-envelope"></i>
-              </a>
-            </p>
-          </div>
-          <div class="col-3 col-md-2">
-            <p class="text-center">
-              <a href="https://github.com/alexadictiva" target="_blank"
-                ><i class="fab fa-github-alt"></i>
-              </a>
-            </p>
-          </div>
-          <div class="col-12 col-lg-4">
-            <p class="footer text-center">
-              2020 &copy; | Todos los Derechos Reservados.
-            </p>
-          </div>
-        </div>
-      </section>
-    </footer>
-    <script src="js/main.js"></script>
-    <script
-      src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
-      integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
-      crossorigin="anonymous"
-    ></script>
-    <script
-      src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
-      integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
-      crossorigin="anonymous"
-    ></script>
-    <script
-      src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
-      integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI"
-      crossorigin="anonymous"
-    ></script>
+    <footer></footer>
+    <script src="./js/main.js"></script>
   </body>
 </html>
