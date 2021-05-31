@@ -16,6 +16,11 @@ body {
   position: relative;
 }
 
+img {
+  max-width: 100%;
+  height: auto;
+}
+
 ul {
   list-style: none;
 }
@@ -108,24 +113,15 @@ main {
   position: relative;
 }
 
-/* .overlayModal {
-  width: 100vw;
-  height: 100vh;
-  background-color: $soft-grey;
-  position: absolute;
-  top: 60px;
-  left: 0;
-  z-index: 500;
-} */
 /*banner*/
 .bannerContainer {
+  height: 80vh;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-clip-path: polygon(0 0, 100% 0, 100% 100%, 0 81%);
           clip-path: polygon(0 0, 100% 0, 100% 100%, 0 81%);
   background-color: #f4a727;
-  margin-bottom: 20px;
 }
 
 .bannerContainer .bannerPicContainer {
@@ -134,7 +130,16 @@ main {
 
 .bannerContainer .bannerTittle {
   width: 60%;
-  padding: 100px 0 0 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 .bannerContainer .bannerTittle h1 {
@@ -144,27 +149,103 @@ main {
 }
 
 /*about me*/
+.aboutContainer {
+  -webkit-clip-path: polygon(100% 0, 100% 96%, 76% 100%, 0 95%, 0 0);
+          clip-path: polygon(100% 0, 100% 96%, 76% 100%, 0 95%, 0 0);
+  padding: 0 0 50px 0;
+}
+
 .aboutContainer .aboutTittle {
-  margin-bottom: 20px;
+  margin: 20px 0;
 }
 
 .aboutContainer .aboutTittle h2 {
   text-align: center;
+  font-size: 2.2rem;
+  font-weight: bold;
 }
 
 .aboutContainer .aboutItems {
   padding: 20px;
 }
 
-.itemDescription {
-  display: none;
+.aboutContainer .aboutItems .aboutItem {
+  margin-bottom: 20px;
 }
 
-.modalPrueba {
+.aboutContainer .aboutItems .aboutItem .itemButton {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.aboutContainer .aboutItems .aboutItem .itemButton button {
+  background-color: transparent;
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: 1.7rem;
+  border: 0;
+  cursor: pointer;
+}
+
+.aboutContainer .aboutItems .aboutItem .itemDescription {
+  display: none;
+  width: 100%;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  /* background: rgba(0, 0, 0, 0.515);
+        padding-top: 33%; */
+}
+
+.aboutContainer .aboutItems .aboutItem .itemDescription .closeButton {
+  border: 0;
+  outline: none;
+  cursor: pointer;
+  background-color: #2ca8f2;
+  top: 0;
   display: block;
-  position: absolute;
+  margin: 20px auto 0;
+  -webkit-box-shadow: 2px 2px 8px #000000;
+          box-shadow: 2px 2px 8px #000000;
+  width: 100px;
+  border-radius: 20px;
+  padding: 3px 5px;
+  font-weight: bold;
+}
+
+.aboutContainer .aboutItems .aboutItem .itemDescription p {
+  margin: auto;
+  width: 80%;
+  font-size: 1.7rem;
+  line-height: 2.2rem;
+  padding: 20px;
+  border-radius: 20px;
+}
+
+.aboutContainer .aboutItems .aboutItem .itemDescription #paragraphDescription {
+  background-color: #ffd213;
+}
+
+.aboutContainer .aboutItems .aboutItem .itemDescription #paragraphDescription1 {
   background-color: #f4a727;
-  width: 70%;
-  height: auto;
+}
+
+.aboutContainer .aboutItems .aboutItem .itemDescription #paragraphDescription2 {
+  background-color: #2ca8f2;
+}
+
+.aboutContainer .aboutItems .aboutItem .itemDescription #paragraphDescription3 {
+  background-color: #c4c4c4;
+}
+
+.modalStyles {
+  display: block !important;
+  /* position: absolute;
+  height: auto; */
 }
 /*# sourceMappingURL=style.css.map */

@@ -20,6 +20,10 @@ body {
   font-family: sans-serif;
   position: relative;
 }
+img {
+  max-width: 100%;
+  height: auto;
+}
 ul {
   list-style: none;
 }
@@ -91,27 +95,22 @@ header {
 main {
   position: relative;
 }
-/* .overlayModal {
-  width: 100vw;
-  height: 100vh;
-  background-color: $soft-grey;
-  position: absolute;
-  top: 60px;
-  left: 0;
-  z-index: 500;
-} */
+
 /*banner*/
 .bannerContainer {
+  height: 80vh;
   display: flex;
   clip-path: polygon(0 0, 100% 0, 100% 100%, 0 81%);
   background-color: $orange;
-  margin-bottom: 20px;
+
   .bannerPicContainer {
     width: 40%;
   }
   .bannerTittle {
     width: 60%;
-    padding: 100px 0 0 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
     h1 {
       font-size: 3rem;
       line-height: 2.3rem;
@@ -121,23 +120,82 @@ main {
 }
 /*about me*/
 .aboutContainer {
+  clip-path: polygon(100% 0, 100% 96%, 76% 100%, 0 95%, 0 0);
+  padding: 0 0 50px 0;
   .aboutTittle {
-    margin-bottom: 20px;
+    margin: 20px 0;
     h2 {
       text-align: center;
+      font-size: 2.2rem;
+      font-weight: bold;
     }
   }
   .aboutItems {
     padding: 20px;
+    .aboutItem {
+      margin-bottom: 20px;
+      .itemButton {
+        display: flex;
+        align-items: center;
+        button {
+          background-color: transparent;
+          text-transform: uppercase;
+          font-weight: bold;
+          font-size: 1.7rem;
+          border: 0;
+          cursor: pointer;
+        }
+      }
+      .itemDescription {
+        display: none;
+        width: 100%;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        /* background: rgba(0, 0, 0, 0.515);
+        padding-top: 33%; */
+        .closeButton {
+          border: 0;
+          outline: none;
+          cursor: pointer;
+          background-color: $blue-blue;
+          top: 0;
+          display: block;
+          margin: 20px auto 0;
+          box-shadow: 2px 2px 8px $black;
+          width: 100px;
+          border-radius: 20px;
+          padding: 3px 5px;
+          font-weight: bold;
+        }
+        p {
+          margin: auto;
+          width: 80%;
+          font-size: 1.7rem;
+          line-height: 2.2rem;
+          padding: 20px;
+          border-radius: 20px;
+        }
+        #paragraphDescription {
+          background-color: $yellow;
+        }
+        #paragraphDescription1 {
+          background-color: $orange;
+        }
+        #paragraphDescription2 {
+          background-color: $blue-blue;
+        }
+        #paragraphDescription3 {
+          background-color: $soft-grey;
+        }
+      }
+    }
   }
 }
-.itemDescription {
-  display: none;
-}
-.modalPrueba {
-  display: block;
-  position: absolute;
-  background-color: $orange;
-  width: 70%;
-  height: auto;
+
+.modalStyles {
+  display: block !important;
+  /* position: absolute;
+  height: auto; */
 }
