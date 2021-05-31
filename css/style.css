@@ -245,7 +245,39 @@ main {
 
 .modalStyles {
   display: block !important;
-  /* position: absolute;
-  height: auto; */
+}
+
+/*experience*/
+.experienceContainer {
+  background-color: #ffd213;
+  -webkit-clip-path: polygon(100% 4%, 100% 100%, 0 96%, 0 8%, 54% 0);
+          clip-path: polygon(100% 4%, 100% 100%, 0 96%, 0 8%, 54% 0);
+}
+
+.experienceContainer .experienceTittle {
+  margin: 20px 0;
+}
+
+.experienceContainer .experienceTittle h2 {
+  text-align: center;
+  font-size: 2.2rem;
+  font-weight: bold;
+}
+
+.experienceContainer .experienceItems {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  overflow-x: scroll;
+  overscroll-behavior-x: contain;
+  -ms-scroll-snap-type: x proximity;
+      scroll-snap-type: x proximity;
+}
+
+.experienceContainer .experienceItems .experienceItem {
+  width: 75%;
+  font-size: 1.7rem;
+  scroll-snap-align: center;
 }
 /*# sourceMappingURL=style.css.map */

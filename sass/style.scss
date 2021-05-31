@@ -196,6 +196,31 @@ main {
 
 .modalStyles {
   display: block !important;
-  /* position: absolute;
-  height: auto; */
+}
+
+/*experience*/
+.experienceContainer {
+  background-color: $yellow;
+  clip-path: polygon(100% 4%, 100% 100%, 0 96%, 0 8%, 54% 0);
+  .experienceTittle {
+    margin: 20px 0;
+    h2 {
+      text-align: center;
+      font-size: 2.2rem;
+      font-weight: bold;
+    }
+  }
+  .experienceItems {
+    width: 100%;
+    display: flex;
+    overflow-x: scroll;
+    overscroll-behavior-x: contain;
+    scroll-snap-type: x proximity;
+    .experienceItem {
+      width: 75%;
+
+      font-size: 1.7rem;
+      scroll-snap-align: center;
+    }
+  }
 }
