@@ -16,10 +16,6 @@ body {
   position: relative;
 }
 
-/* img {
-  max-width: 100%;
-  height: auto;
-} */
 ul {
   list-style: none;
 }
@@ -314,55 +310,55 @@ main {
   padding-bottom: 20px;
 }
 
-.certificatesTittle {
+.certificatesContainer .certificatesTittle {
   margin-top: 20px;
   padding: 20px;
 }
 
-.certificatesTittle h2 {
+.certificatesContainer .certificatesTittle h2 {
   text-align: center;
   font-size: 1.8rem;
   text-transform: uppercase;
 }
 
-.certificatesItemsContainer {
+.certificatesContainer .certificatesItemsContainer {
   width: 100vw;
   overflow-x: scroll;
 }
 
-.certificatesItemsContainer::-webkit-scrollbar {
+.certificatesContainer .certificatesItemsContainer::-webkit-scrollbar {
   -webkit-appearance: none;
 }
 
-.certificatesItemsContainer::-webkit-scrollbar:vertical {
+.certificatesContainer .certificatesItemsContainer::-webkit-scrollbar:vertical {
   width: 10px;
 }
 
-.certificatesItemsContainer::-webkit-scrollbar-button:increment,
-.certificatesItemsContainer::-webkit-scrollbar-button {
+.certificatesContainer .certificatesItemsContainer::-webkit-scrollbar-button:increment {
   display: none;
 }
 
-.certificatesItemsContainer::-webkit-scrollbar:horizontal {
-  height: 10px;
-  /*alto de la barrita*/
+.certificatesContainer .certificatesItemsContainer::-webkit-scrollbar-button {
+  display: none;
 }
 
-.certificatesItemsContainer::-webkit-scrollbar-thumb {
+.certificatesContainer .certificatesItemsContainer::-webkit-scrollbar:horizontal {
+  height: 10px;
+}
+
+.certificatesContainer .certificatesItemsContainer::-webkit-scrollbar-thumb {
   background-color: #c4c4c4;
   border-radius: 20px;
   -webkit-box-shadow: 2px 2px 8px #000000 inset;
           box-shadow: 2px 2px 8px #000000 inset;
 }
 
-.certificatesItemsContainer::-webkit-scrollbar-track {
-  /*carril*/
+.certificatesContainer .certificatesItemsContainer::-webkit-scrollbar-track {
   border-radius: 10px;
   background-color: #f4a727;
-  /*fondo del carrita de la barrita*/
 }
 
-.certificatesItemsContent {
+.certificatesContainer .certificatesItemsContainer .certificatesItemsContent {
   padding: 0 15px;
   width: 100vw;
   display: -webkit-box;
@@ -370,11 +366,11 @@ main {
   display: flex;
 }
 
-.certificateItem {
+.certificatesContainer .certificatesItemsContainer .certificatesItemsContent .certificateItem {
   margin: 20px 10px;
 }
 
-.certificateItem img {
+.certificatesContainer .certificatesItemsContainer .certificatesItemsContent .certificateItem img {
   width: 280px;
   height: auto;
   border-radius: 10px;

@@ -20,10 +20,6 @@ body {
   font-family: sans-serif;
   position: relative;
 }
-/* img {
-  max-width: 100%;
-  height: auto;
-} */
 ul {
   list-style: none;
 }
@@ -248,63 +244,57 @@ main {
 /*certificates*/
 .certificatesContainer {
   padding-bottom: 20px;
-}
-.certificatesTittle {
-  margin-top: 20px;
-  padding: 20px;
-}
-.certificatesTittle h2 {
-  text-align: center;
-  font-size: 1.8rem;
-  text-transform: uppercase;
-}
-.certificatesItemsContainer {
-  width: 100vw;
-  overflow-x: scroll;
-}
-
-.certificatesItemsContainer::-webkit-scrollbar {
-  -webkit-appearance: none;
-}
-
-.certificatesItemsContainer::-webkit-scrollbar:vertical {
-  width: 10px;
-}
-
-.certificatesItemsContainer::-webkit-scrollbar-button:increment,
-.certificatesItemsContainer::-webkit-scrollbar-button {
-  display: none;
-}
-
-.certificatesItemsContainer::-webkit-scrollbar:horizontal {
-  height: 10px; /*alto de la barrita*/
-}
-
-.certificatesItemsContainer::-webkit-scrollbar-thumb {
-  background-color: $soft-grey;
-  border-radius: 20px;
-  box-shadow: 2px 2px 8px $black inset;
-}
-
-.certificatesItemsContainer::-webkit-scrollbar-track {
-  /*carril*/
-  border-radius: 10px;
-  background-color: $orange; /*fondo del carrita de la barrita*/
-}
-
-.certificatesItemsContent {
-  padding: 0 15px;
-  width: 100vw;
-  display: flex;
-}
-.certificateItem {
-  margin: 20px 10px;
-}
-.certificateItem img {
-  width: 280px;
-  height: auto;
-  border-radius: 10px;
-  box-shadow: 2px 2px 8px black;
+  .certificatesTittle {
+    margin-top: 20px;
+    padding: 20px;
+    h2 {
+      text-align: center;
+      font-size: 1.8rem;
+      text-transform: uppercase;
+    }
+  }
+  .certificatesItemsContainer {
+    width: 100vw;
+    overflow-x: scroll;
+    &::-webkit-scrollbar {
+      -webkit-appearance: none;
+    }
+    &::-webkit-scrollbar:vertical {
+      width: 10px;
+    }
+    &::-webkit-scrollbar-button:increment {
+      display: none;
+    }
+    &::-webkit-scrollbar-button {
+      display: none;
+    }
+    &::-webkit-scrollbar:horizontal {
+      height: 10px;
+    }
+    &::-webkit-scrollbar-thumb {
+      background-color: $soft-grey;
+      border-radius: 20px;
+      box-shadow: 2px 2px 8px $black inset;
+    }
+    &::-webkit-scrollbar-track {
+      border-radius: 10px;
+      background-color: $orange;
+    }
+    .certificatesItemsContent {
+      padding: 0 15px;
+      width: 100vw;
+      display: flex;
+      .certificateItem {
+        margin: 20px 10px;
+        img {
+          width: 280px;
+          height: auto;
+          border-radius: 10px;
+          box-shadow: 2px 2px 8px black;
+        }
+      }
+    }
+  }
 }
 
 /*footer*/
