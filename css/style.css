@@ -16,11 +16,10 @@ body {
   position: relative;
 }
 
-img {
+/* img {
   max-width: 100%;
   height: auto;
-}
-
+} */
 ul {
   list-style: none;
 }
@@ -34,6 +33,8 @@ header {
   background-color: #ffd213;
   width: 100%;
   height: 60px;
+  position: fixed;
+  z-index: 20;
 }
 
 header .menu {
@@ -111,6 +112,7 @@ header .menu .menuBotton:checked ~ .navContainer {
 /*main*/
 main {
   position: relative;
+  padding-top: 59.5px;
 }
 
 /*banner*/
@@ -152,7 +154,7 @@ main {
 .aboutContainer {
   -webkit-clip-path: polygon(100% 0, 100% 96%, 76% 100%, 0 95%, 0 0);
           clip-path: polygon(100% 0, 100% 96%, 76% 100%, 0 95%, 0 0);
-  padding: 0 0 50px 0;
+  padding: 0;
 }
 
 .aboutContainer .aboutTittle {
@@ -202,22 +204,6 @@ main {
         padding-top: 33%; */
 }
 
-.aboutContainer .aboutItems .aboutItem .itemDescription .closeButton {
-  border: 0;
-  outline: none;
-  cursor: pointer;
-  background-color: #2ca8f2;
-  top: 0;
-  display: block;
-  margin: 20px auto 0;
-  -webkit-box-shadow: 2px 2px 8px #000000;
-          box-shadow: 2px 2px 8px #000000;
-  width: 100px;
-  border-radius: 20px;
-  padding: 3px 5px;
-  font-weight: bold;
-}
-
 .aboutContainer .aboutItems .aboutItem .itemDescription p {
   margin: auto;
   width: 80%;
@@ -249,9 +235,10 @@ main {
 
 /*experience*/
 .experienceContainer {
+  padding: 40px 0 50px;
   background-color: #ffd213;
-  -webkit-clip-path: polygon(100% 4%, 100% 100%, 0 96%, 0 8%, 54% 0);
-          clip-path: polygon(100% 4%, 100% 100%, 0 96%, 0 8%, 54% 0);
+  -webkit-clip-path: polygon(100% 4%, 100% 97%, 0 100%, 0 8%, 54% 0);
+          clip-path: polygon(100% 4%, 100% 97%, 0 100%, 0 8%, 54% 0);
 }
 
 .experienceContainer .experienceTittle {
@@ -264,20 +251,178 @@ main {
   font-weight: bold;
 }
 
-.experienceContainer .experienceItems {
-  width: 100%;
+.experienceContainer .experiencesItemsContainer {
+  background: #ffd213;
+  width: 100vw;
+  overflow-x: scroll;
+}
+
+.experienceContainer .experiencesItemsContainer::-webkit-scrollbar {
+  -webkit-appearance: none;
+}
+
+.experienceContainer .experiencesItemsContainer::-webkit-scrollbar:vertical {
+  width: 10px;
+}
+
+.experienceContainer .experiencesItemsContainer::-webkit-scrollbar-button:increment {
+  display: none;
+}
+
+.experienceContainer .experiencesItemsContainer::-webkit-scrollbar-button {
+  display: none;
+}
+
+.experienceContainer .experiencesItemsContainer::-webkit-scrollbar:horizontal {
+  height: 10px;
+}
+
+.experienceContainer .experiencesItemsContainer::-webkit-scrollbar-thumb {
+  background-color: #c4c4c4;
+  border-radius: 20px;
+  -webkit-box-shadow: 2px 2px 8px #000000 inset;
+          box-shadow: 2px 2px 8px #000000 inset;
+}
+
+.experienceContainer .experiencesItemsContainer::-webkit-scrollbar-track {
+  border-radius: 10px;
+  background-color: #f4a727;
+}
+
+.experienceContainer .experiencesItemsContainer .experiencesItemsContent {
+  padding: 0 15px;
+  width: 100vw;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  overflow-x: scroll;
-  overscroll-behavior-x: contain;
-  -ms-scroll-snap-type: x proximity;
-      scroll-snap-type: x proximity;
 }
 
-.experienceContainer .experienceItems .experienceItem {
-  width: 75%;
-  font-size: 1.7rem;
-  scroll-snap-align: center;
+.experienceContainer .experiencesItemsContainer .experiencesItemsContent .experienceItem {
+  margin: 20px 0;
+  padding: 0 15px;
+}
+
+.experienceContainer .experiencesItemsContainer .experiencesItemsContent .experienceItem .iframe {
+  width: 280px;
+  height: 450px;
+  border-radius: 10px;
+  border: 0;
+}
+
+/*certificates*/
+.certificatesContainer {
+  padding-bottom: 20px;
+}
+
+.certificatesTittle {
+  margin-top: 20px;
+  padding: 20px;
+}
+
+.certificatesTittle h2 {
+  text-align: center;
+  font-size: 1.8rem;
+  text-transform: uppercase;
+}
+
+.certificatesItemsContainer {
+  width: 100vw;
+  overflow-x: scroll;
+}
+
+.certificatesItemsContainer::-webkit-scrollbar {
+  -webkit-appearance: none;
+}
+
+.certificatesItemsContainer::-webkit-scrollbar:vertical {
+  width: 10px;
+}
+
+.certificatesItemsContainer::-webkit-scrollbar-button:increment,
+.certificatesItemsContainer::-webkit-scrollbar-button {
+  display: none;
+}
+
+.certificatesItemsContainer::-webkit-scrollbar:horizontal {
+  height: 10px;
+  /*alto de la barrita*/
+}
+
+.certificatesItemsContainer::-webkit-scrollbar-thumb {
+  background-color: #c4c4c4;
+  border-radius: 20px;
+  -webkit-box-shadow: 2px 2px 8px #000000 inset;
+          box-shadow: 2px 2px 8px #000000 inset;
+}
+
+.certificatesItemsContainer::-webkit-scrollbar-track {
+  /*carril*/
+  border-radius: 10px;
+  background-color: #f4a727;
+  /*fondo del carrita de la barrita*/
+}
+
+.certificatesItemsContent {
+  padding: 0 15px;
+  width: 100vw;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.certificateItem {
+  margin: 20px 10px;
+}
+
+.certificateItem img {
+  width: 280px;
+  height: auto;
+  border-radius: 10px;
+  -webkit-box-shadow: 2px 2px 8px black;
+          box-shadow: 2px 2px 8px black;
+}
+
+/*footer*/
+.footerContainer {
+  -webkit-clip-path: polygon(50% 0%, 100% 9%, 100% 100%, 0 100%, 0 6%);
+          clip-path: polygon(50% 0%, 100% 9%, 100% 100%, 0 100%, 0 6%);
+  background-color: #ffd213;
+  padding: 25px 0 40px;
+}
+
+.footerContainer .footerContent .footerTittle {
+  margin-bottom: 40px;
+}
+
+.footerContainer .footerContent .footerTittle h2 {
+  text-align: center;
+  font-size: 1.8rem;
+  text-transform: uppercase;
+}
+
+.footerContainer .footerContent .data .emailContainer {
+  margin-bottom: 40px;
+}
+
+.footerContainer .footerContent .data .emailContainer p {
+  text-align: center;
+  font-size: 1.5rem;
+  text-transform: uppercase;
+}
+
+.footerContainer .footerContent .data .rrssContainer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: baseline;
+      -ms-flex-align: baseline;
+          align-items: baseline;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.footerContainer .footerContent .data .rrssContainer p {
+  margin: 0 10px;
 }
 /*# sourceMappingURL=style.css.map */

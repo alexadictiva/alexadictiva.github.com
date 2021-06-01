@@ -5,23 +5,23 @@ buttonModal.addEventListener("clcik", buttonModal);
 
 function showModal() {
   var itemDescription = document.getElementById("itemDescription");
-  itemDescription.classList.add("modalStyles");
+  itemDescription.classList.toggle("modalStyles");
 }
 
 function showModal1() {
   var itemDescription1 = document.getElementById("itemDescription1");
-  itemDescription1.classList.add("modalStyles");
+  itemDescription1.classList.toggle("modalStyles");
 }
 function showModal2() {
   var itemDescription2 = document.getElementById("itemDescription2");
-  itemDescription2.classList.add("modalStyles");
+  itemDescription2.classList.toggle("modalStyles");
 }
 function showModal3() {
   var itemDescription3 = document.getElementById("itemDescription3");
-  itemDescription3.classList.add("modalStyles");
+  itemDescription3.classList.toggle("modalStyles");
 }
 
-function closeButton() {
+/* function closeButton() {
   itemDescription.classList.remove("modalStyles");
 }
 function closeButton1() {
@@ -32,4 +32,4 @@ function closeButton2() {
 }
 function closeButton3() {
   itemDescription3.classList.remove("modalStyles");
-}
+} */
