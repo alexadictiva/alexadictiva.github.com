@@ -69,6 +69,7 @@ header .menu .navContainer {
 header .menu .navContainer .menuContainer {
   height: 100vh;
   width: 50vw;
+  /*baja el ipad view a 40vw*/
   background-color: #ffd213;
 }
 
@@ -146,72 +147,7 @@ main {
   margin-bottom: 10px;
 }
 
-/*about me*/
-/* .aboutContainer {
-  clip-path: polygon(100% 0, 100% 96%, 76% 100%, 0 95%, 0 0);
-  padding: 0;
-  .aboutTittle {
-    margin: 20px 0;
-    h2 {
-      text-align: center;
-      font-size: 2.2rem;
-      font-weight: bold;
-    }
-  }
-  .aboutItems {
-    padding: 20px;
-    .aboutItem {
-      margin-bottom: 20px;
-      .itemButton {
-        display: flex;
-        align-items: center;
-        button {
-          background-color: transparent;
-          text-transform: uppercase;
-          font-weight: bold;
-          font-size: 1.7rem;
-          border: 0;
-          cursor: pointer;
-        }
-      }
-      .itemDescription {
-        display: none;
-        width: 100%;
-        top: 0;
-        left: 0;
-        right: 0;
-        bottom: 0;
-        /* background: rgba(0, 0, 0, 0.515);
-        padding-top: 33%; 
-        p {
-          margin: auto;
-          width: 80%;
-          font-size: 1.7rem;
-          line-height: 2.2rem;
-          padding: 20px;
-          border-radius: 20px;
-        }
-        #paragraphDescription {
-          background-color: $yellow;
-        }
-        #paragraphDescription1 {
-          background-color: $orange;
-        }
-        #paragraphDescription2 {
-          background-color: $blue-blue;
-        }
-        #paragraphDescription3 {
-          background-color: $soft-grey;
-        }
-      }
-    }
-  }
-}
-
-.modalStyles {
-  display: block !important;
-}
- */
+/*about*/
 .overlay,
 .overlay2 {
   width: 100%;
@@ -224,8 +160,6 @@ main {
 }
 
 .aboutContainer {
-  -webkit-clip-path: polygon(100% 0, 100% 96%, 76% 100%, 0 95%, 0 0);
-          clip-path: polygon(100% 0, 100% 96%, 76% 100%, 0 95%, 0 0);
   padding: 0;
 }
 
@@ -240,12 +174,10 @@ main {
 }
 
 .aboutContainer .aboutItems {
-  background: yellow;
   padding: 10px;
 }
 
 .aboutContainer .aboutItems .aboutItem {
-  background: green;
   padding: 20px;
 }
 
@@ -260,6 +192,16 @@ main {
 
 .aboutContainer .aboutItems .aboutItem .itemButton label {
   cursor: pointer;
+  width: 80px;
+  height: 80px;
+  -webkit-box-shadow: 2px 2px 8px #000000;
+          box-shadow: 2px 2px 8px #000000;
+  border-radius: 50%;
+}
+
+.aboutContainer .aboutItems .aboutItem .itemButton label img {
+  width: 80px;
+  height: auto;
 }
 
 .aboutContainer .aboutItems .aboutItem .itemButton button {
@@ -273,12 +215,14 @@ main {
 
 .aboutContainer .aboutItems .aboutItem .itemDescription,
 .aboutContainer .aboutItems .aboutItem .itemDescription2 {
+  background: #f4a727;
   padding: 20px;
-  height: 50%;
+  height: 80%;
   width: 80%;
-  overflow-y: scroll;
+  /*overflow-y: scroll;*/
   border-radius: 10px;
-  background: blue;
+  -webkit-box-shadow: 2px 2px 8px #000000;
+          box-shadow: 2px 2px 8px #000000;
   display: none;
   position: fixed;
   margin: auto;
@@ -305,10 +249,15 @@ main {
 
 .aboutContainer .aboutItems .aboutItem .itemDescription .itemDescriptionCloseButton button,
 .aboutContainer .aboutItems .aboutItem .itemDescription2 .itemDescriptionCloseButton button {
+  border: black 2px solid;
+  -webkit-box-shadow: 2px 2px 8px #000000;
+          box-shadow: 2px 2px 8px #000000;
+  border-radius: 50%;
+  width: 30px;
+  height: 30px;
   background: transparent;
   font-size: 2rem;
   font-weight: bold;
-  border: 0;
   cursor: pointer;
 }
 
