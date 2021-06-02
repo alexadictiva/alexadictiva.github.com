@@ -224,8 +224,6 @@ main {
 }
 
 .aboutContainer {
-  -webkit-clip-path: polygon(100% 0, 100% 96%, 76% 100%, 0 95%, 0 0);
-          clip-path: polygon(100% 0, 100% 96%, 76% 100%, 0 95%, 0 0);
   padding: 0;
 }
 
