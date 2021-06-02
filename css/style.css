@@ -13,7 +13,7 @@
 body {
   overflow-x: hidden;
   font-family: sans-serif;
-  position: relative;
+  /*position: relative;*/
 }
 
 ul {
@@ -147,6 +147,82 @@ main {
 }
 
 /*about me*/
+/* .aboutContainer {
+  clip-path: polygon(100% 0, 100% 96%, 76% 100%, 0 95%, 0 0);
+  padding: 0;
+  .aboutTittle {
+    margin: 20px 0;
+    h2 {
+      text-align: center;
+      font-size: 2.2rem;
+      font-weight: bold;
+    }
+  }
+  .aboutItems {
+    padding: 20px;
+    .aboutItem {
+      margin-bottom: 20px;
+      .itemButton {
+        display: flex;
+        align-items: center;
+        button {
+          background-color: transparent;
+          text-transform: uppercase;
+          font-weight: bold;
+          font-size: 1.7rem;
+          border: 0;
+          cursor: pointer;
+        }
+      }
+      .itemDescription {
+        display: none;
+        width: 100%;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        /* background: rgba(0, 0, 0, 0.515);
+        padding-top: 33%; 
+        p {
+          margin: auto;
+          width: 80%;
+          font-size: 1.7rem;
+          line-height: 2.2rem;
+          padding: 20px;
+          border-radius: 20px;
+        }
+        #paragraphDescription {
+          background-color: $yellow;
+        }
+        #paragraphDescription1 {
+          background-color: $orange;
+        }
+        #paragraphDescription2 {
+          background-color: $blue-blue;
+        }
+        #paragraphDescription3 {
+          background-color: $soft-grey;
+        }
+      }
+    }
+  }
+}
+
+.modalStyles {
+  display: block !important;
+}
+ */
+.overlay,
+.overlay2 {
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 30;
+}
+
 .aboutContainer {
   -webkit-clip-path: polygon(100% 0, 100% 96%, 76% 100%, 0 95%, 0 0);
           clip-path: polygon(100% 0, 100% 96%, 76% 100%, 0 95%, 0 0);
@@ -154,21 +230,23 @@ main {
 }
 
 .aboutContainer .aboutTittle {
-  margin: 20px 0;
+  margin-bottom: 20px;
 }
 
 .aboutContainer .aboutTittle h2 {
   text-align: center;
-  font-size: 2.2rem;
-  font-weight: bold;
+  font-size: 1.7rem;
+  line-height: 2.7rem;
 }
 
 .aboutContainer .aboutItems {
-  padding: 20px;
+  background: yellow;
+  padding: 10px;
 }
 
 .aboutContainer .aboutItems .aboutItem {
-  margin-bottom: 20px;
+  background: green;
+  padding: 20px;
 }
 
 .aboutContainer .aboutItems .aboutItem .itemButton {
@@ -180,53 +258,66 @@ main {
           align-items: center;
 }
 
+.aboutContainer .aboutItems .aboutItem .itemButton label {
+  cursor: pointer;
+}
+
 .aboutContainer .aboutItems .aboutItem .itemButton button {
-  background-color: transparent;
+  padding: 0 15px;
   text-transform: uppercase;
-  font-weight: bold;
-  font-size: 1.7rem;
+  font-size: 1.5rem;
+  background: transparent;
   border: 0;
   cursor: pointer;
 }
 
-.aboutContainer .aboutItems .aboutItem .itemDescription {
+.aboutContainer .aboutItems .aboutItem .itemDescription,
+.aboutContainer .aboutItems .aboutItem .itemDescription2 {
+  padding: 20px;
+  height: 50%;
+  width: 80%;
+  overflow-y: scroll;
+  border-radius: 10px;
+  background: blue;
   display: none;
-  width: 100%;
+  position: fixed;
+  margin: auto;
   top: 0;
+  bottom: 0;
   left: 0;
   right: 0;
-  bottom: 0;
-  /* background: rgba(0, 0, 0, 0.515);
-        padding-top: 33%; */
+  z-index: 35;
+  -webkit-transition-delay: 5s;
+          transition-delay: 5s;
 }
 
-.aboutContainer .aboutItems .aboutItem .itemDescription p {
-  margin: auto;
-  width: 80%;
-  font-size: 1.7rem;
-  line-height: 2.2rem;
-  padding: 20px;
-  border-radius: 20px;
+.aboutContainer .aboutItems .aboutItem .itemDescription .itemDescriptionCloseButton,
+.aboutContainer .aboutItems .aboutItem .itemDescription2 .itemDescriptionCloseButton {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  width: 100%;
+  padding-bottom: 10px;
 }
 
-.aboutContainer .aboutItems .aboutItem .itemDescription #paragraphDescription {
-  background-color: #ffd213;
+.aboutContainer .aboutItems .aboutItem .itemDescription .itemDescriptionCloseButton button,
+.aboutContainer .aboutItems .aboutItem .itemDescription2 .itemDescriptionCloseButton button {
+  background: transparent;
+  font-size: 2rem;
+  font-weight: bold;
+  border: 0;
+  cursor: pointer;
 }
 
-.aboutContainer .aboutItems .aboutItem .itemDescription #paragraphDescription1 {
-  background-color: #f4a727;
-}
-
-.aboutContainer .aboutItems .aboutItem .itemDescription #paragraphDescription2 {
-  background-color: #2ca8f2;
-}
-
-.aboutContainer .aboutItems .aboutItem .itemDescription #paragraphDescription3 {
-  background-color: #c4c4c4;
-}
-
-.modalStyles {
-  display: block !important;
+.aboutContainer .aboutItems .aboutItem .itemDescription .itemDescriptionParagraph,
+.aboutContainer .aboutItems .aboutItem .itemDescription2 .itemDescriptionParagraph {
+  margin-top: 20px;
+  color: white;
+  font-size: 1.5rem;
+  line-height: 2.3rem;
 }
 
 /*experience*/
