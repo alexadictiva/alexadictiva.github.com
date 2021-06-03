@@ -6,6 +6,7 @@ $blue-blue: #2ca8f2;
 $soft-grey: #c4c4c4;
 $white: #ffffff;
 $overlay: rgba(34, 34, 34, 0.95);
+
 /*Generals*/
 
 * {
@@ -19,7 +20,6 @@ $overlay: rgba(34, 34, 34, 0.95);
 body {
   overflow-x: hidden;
   font-family: sans-serif;
-  /*position: relative;*/
 }
 ul {
   list-style: none;
@@ -97,11 +97,11 @@ main {
 
 /*banner*/
 .bannerContainer {
-  height: 80vh;
+  height: 70vh;
   display: flex;
+  align-items: center;
   clip-path: polygon(0 0, 100% 0, 100% 100%, 0 81%);
   background-color: $orange;
-
   .bannerPicContainer {
     width: 70%;
     padding-top: 40px;
@@ -179,7 +179,6 @@ main {
         padding: 20px;
         height: 80%;
         width: 80%;
-        /*overflow-y: scroll;*/
         border-radius: 10px;
         box-shadow: 2px 2px 8px $black;
         display: none;
@@ -209,10 +208,15 @@ main {
           }
         }
         .itemDescriptionParagraph {
-          margin-top: 20px;
-          color: white;
-          font-size: 1.5rem;
-          line-height: 2.3rem;
+          h3 {
+            font-size: 1.5rem;
+          }
+          p {
+            margin-top: 20px;
+            color: white;
+            font-size: 1.3rem;
+            line-height: 2rem;
+          }
         }
       }
     }
@@ -405,6 +409,10 @@ main {
           text-align: center;
           font-size: 1.5rem;
           text-transform: uppercase;
+          a {
+            color: $black;
+            font-weight: bold;
+          }
         }
       }
       .rrssContainer {

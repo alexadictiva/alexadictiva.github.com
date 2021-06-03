@@ -13,7 +13,6 @@
 body {
   overflow-x: hidden;
   font-family: sans-serif;
-  /*position: relative;*/
 }
 
 ul {
@@ -114,10 +113,13 @@ main {
 
 /*banner*/
 .bannerContainer {
-  height: 80vh;
+  height: 70vh;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   -webkit-clip-path: polygon(0 0, 100% 0, 100% 100%, 0 81%);
           clip-path: polygon(0 0, 100% 0, 100% 100%, 0 81%);
   background-color: #f4a727;
@@ -227,7 +229,6 @@ main {
   padding: 20px;
   height: 80%;
   width: 80%;
-  /*overflow-y: scroll;*/
   border-radius: 10px;
   -webkit-box-shadow: 2px 2px 8px #000000;
           box-shadow: 2px 2px 8px #000000;
@@ -273,14 +274,21 @@ main {
   cursor: pointer;
 }
 
-.aboutContainer .aboutItems .aboutItem .itemDescription .itemDescriptionParagraph,
-.aboutContainer .aboutItems .aboutItem .itemDescription2 .itemDescriptionParagraph,
-.aboutContainer .aboutItems .aboutItem .itemDescription3 .itemDescriptionParagraph,
-.aboutContainer .aboutItems .aboutItem .itemDescription4 .itemDescriptionParagraph {
+.aboutContainer .aboutItems .aboutItem .itemDescription .itemDescriptionParagraph h3,
+.aboutContainer .aboutItems .aboutItem .itemDescription2 .itemDescriptionParagraph h3,
+.aboutContainer .aboutItems .aboutItem .itemDescription3 .itemDescriptionParagraph h3,
+.aboutContainer .aboutItems .aboutItem .itemDescription4 .itemDescriptionParagraph h3 {
+  font-size: 1.5rem;
+}
+
+.aboutContainer .aboutItems .aboutItem .itemDescription .itemDescriptionParagraph p,
+.aboutContainer .aboutItems .aboutItem .itemDescription2 .itemDescriptionParagraph p,
+.aboutContainer .aboutItems .aboutItem .itemDescription3 .itemDescriptionParagraph p,
+.aboutContainer .aboutItems .aboutItem .itemDescription4 .itemDescriptionParagraph p {
   margin-top: 20px;
   color: white;
-  font-size: 1.5rem;
-  line-height: 2.3rem;
+  font-size: 1.3rem;
+  line-height: 2rem;
 }
 
 /*experience*/
@@ -513,6 +521,11 @@ main {
   text-align: center;
   font-size: 1.5rem;
   text-transform: uppercase;
+}
+
+.footerContainer .footerContent .data .emailContainer p a {
+  color: #000000;
+  font-weight: bold;
 }
 
 .footerContainer .footerContent .data .rrssContainer {
