@@ -103,10 +103,13 @@ main {
   background-color: $orange;
 
   .bannerPicContainer {
-    width: 40%;
+    width: 70%;
+    padding-top: 40px;
+    img {
+      width: 100%;
+    }
   }
   .bannerTittle {
-    width: 60%;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -119,7 +122,9 @@ main {
 }
 /*about*/
 .overlay,
-.overlay2 {
+.overlay2,
+.overlay3,
+.overlay4 {
   width: 100%;
   height: 100%;
   background: hsla(0, 0%, 0%, 0.5);
@@ -167,7 +172,9 @@ main {
       }
 
       .itemDescription,
-      .itemDescription2 {
+      .itemDescription2,
+      .itemDescription3,
+      .itemDescription4 {
         background: $orange;
         padding: 20px;
         height: 80%;
