@@ -285,117 +285,132 @@ main {
 
 /*experience*/
 .experienceContainer {
-  padding: 40px 0 50px;
+  padding: 50px 0 70px;
+  -webkit-clip-path: polygon(0 4%, 41% 0, 100% 5%, 100% 92%, 66% 100%, 0 91%);
+          clip-path: polygon(0 4%, 41% 0, 100% 5%, 100% 92%, 66% 100%, 0 91%);
   background-color: #ffd213;
-  -webkit-clip-path: polygon(100% 4%, 100% 97%, 0 100%, 0 8%, 54% 0);
-          clip-path: polygon(100% 4%, 100% 97%, 0 100%, 0 8%, 54% 0);
 }
 
 .experienceContainer .experienceTittle {
-  margin: 20px 0;
+  margin-bottom: 20px;
 }
 
 .experienceContainer .experienceTittle h2 {
   text-align: center;
-  font-size: 2.2rem;
-  font-weight: bold;
+  font-size: 1.7rem;
+  line-height: 2.7rem;
+  text-transform: uppercase;
 }
 
-.experienceContainer .experiencesItemsContainer {
-  background: #ffd213;
-  width: 100vw;
+.experienceContainer .experienceContent {
+  width: 100%;
+  margin-top: 10px;
+  padding: 15px 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
   overflow-x: scroll;
 }
 
-.experienceContainer .experiencesItemsContainer::-webkit-scrollbar {
+.experienceContainer .experienceContent::-webkit-scrollbar {
   -webkit-appearance: none;
 }
 
-.experienceContainer .experiencesItemsContainer::-webkit-scrollbar:vertical {
-  width: 10px;
-}
-
-.experienceContainer .experiencesItemsContainer::-webkit-scrollbar-button:increment {
-  display: none;
-}
-
-.experienceContainer .experiencesItemsContainer::-webkit-scrollbar-button {
-  display: none;
-}
-
-.experienceContainer .experiencesItemsContainer::-webkit-scrollbar:horizontal {
+.experienceContainer .experienceContent::-webkit-scrollbar:horizontal {
   height: 10px;
 }
 
-.experienceContainer .experiencesItemsContainer::-webkit-scrollbar-thumb {
-  background-color: #c4c4c4;
+.experienceContainer .experienceContent::-webkit-scrollbar-track:horizontal {
+  background: #c4c4c4;
+  border-radius: 10px;
+}
+
+.experienceContainer .experienceContent::-webkit-scrollbar-thumb {
+  background: #f4a727;
   border-radius: 20px;
+  border: 1px solid #000000;
   -webkit-box-shadow: 2px 2px 8px #000000 inset;
           box-shadow: 2px 2px 8px #000000 inset;
 }
 
-.experienceContainer .experiencesItemsContainer::-webkit-scrollbar-track {
+.experienceContainer .experienceContent .experienceItem {
+  margin: 0 15px;
+  min-width: 280px;
+  height: 460px;
   border-radius: 10px;
-  background-color: #f4a727;
-}
-
-.experienceContainer .experiencesItemsContainer .experiencesItemsContent {
-  padding: 0 15px;
-  width: 100vw;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-}
-
-.experienceContainer .experiencesItemsContainer .experiencesItemsContent .experienceItem {
-  margin: 20px 0;
-  padding: 0 15px;
-}
-
-.experienceContainer .experiencesItemsContainer .experiencesItemsContent .experienceItem div {
-  width: 280px;
-  height: 450px;
-  border-radius: 10px;
-  border: 0;
   position: relative;
   -webkit-box-shadow: 2px 2px 8px #000000;
           box-shadow: 2px 2px 8px #000000;
 }
 
-.experienceContainer .experiencesItemsContainer .experiencesItemsContent .experienceItem div img {
+.experienceContainer .experienceContent .experienceItem .hoverOverlay {
+  height: 45%;
   width: 100%;
-  height: 100%;
-  border-radius: 10px;
-}
-
-.experienceContainer .experiencesItemsContainer .experiencesItemsContent .experienceItem div .experienceItemDetails {
-  width: 100%;
-  height: 35%;
-  padding: 15px;
-  background-color: rgba(34, 34, 34, 0.95);
-  border-top-left-radius: 0;
-  border-top-right-radius: 0;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
   position: absolute;
   bottom: 0;
+  background: rgba(0, 0, 0, 0.9);
+  padding: 15px 10px 10px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  display: none;
 }
 
-.experienceContainer .experiencesItemsContainer .experiencesItemsContent .experienceItem div .experienceItemDetails h3 {
-  font-size: 1.5rem;
-  margin-bottom: 15px;
+.experienceContainer .experienceContent .experienceItem .hoverOverlay h3 {
   color: #ffffff;
+  font-size: 1.7rem;
+  margin-bottom: 10px;
 }
 
-.experienceContainer .experiencesItemsContainer .experiencesItemsContent .experienceItem div .experienceItemDetails a {
-  color: #ffffff;
-  width: 60%;
-  margin: 10px 0;
-  font-size: 1.3rem;
+.experienceContainer .experienceContent .experienceItem .hoverOverlay p a {
   display: block;
-  padding: 3px 10px;
-  border: 1px #ffffff solid;
+  color: #ffffff;
+  font-size: 1.4rem;
+  line-height: 1.9rem;
+  padding: 3px 8px;
   border-radius: 50px;
-  -webkit-box-shadow: 1px 1px 4px #ffffff;
-          box-shadow: 1px 1px 4px #ffffff;
+  border: #ffffff 1px solid;
+  margin-bottom: 10px;
+}
+
+.experienceContainer .experienceContent .experienceItem:hover > .hoverOverlay {
+  display: block;
+}
+
+.experienceContainer .experienceContent .experience1,
+.experienceContainer .experienceContent .experience2,
+.experienceContainer .experienceContent .experience3,
+.experienceContainer .experienceContent .experience4,
+.experienceContainer .experienceContent .experience5,
+.experienceContainer .experienceContent .experience6 {
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.experienceContainer .experienceContent .experience1 {
+  background-image: url("../assets/img/experience1.jpg");
+}
+
+.experienceContainer .experienceContent .experience2 {
+  background-image: url("../assets/img/experience2.jpg");
+}
+
+.experienceContainer .experienceContent .experience3 {
+  background-image: url("../assets/img/experience3.jpg");
+}
+
+.experienceContainer .experienceContent .experience4 {
+  background-image: url("../assets/img/experience4.jpg");
+}
+
+.experienceContainer .experienceContent .experience5 {
+  background-image: url("../assets/img/experience1.jpg");
+}
+
+.experienceContainer .experienceContent .experience6 {
+  background-image: url("../assets/img/experience2.jpg");
 }
 
 /*certificates*/
