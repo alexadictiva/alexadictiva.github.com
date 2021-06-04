@@ -101,6 +101,17 @@ header .menu .navContainer .menuContainer .menuDropdown .menuItem:hover > .menuL
   color: #f4a727;
 }
 
+header .menu .navContainer .menuContainer .menuDropdown .menuLinkDownload {
+  background: #2ca8f2;
+  color: #ffffff;
+  text-transform: uppercase;
+  font-weight: bold;
+  padding: 8px 15px;
+  border-radius: 10px;
+  -webkit-box-shadow: 2px 2px 4px #000000;
+          box-shadow: 2px 2px 4px #000000;
+}
+
 header .menu .menuBotton:checked ~ .navContainer {
   right: 0;
 }
@@ -315,7 +326,7 @@ main {
 
 .experienceContainer .experienceContent::-webkit-scrollbar-track:horizontal {
   border-radius: 10px;
-  background-color: #f4a727;
+  background-color: #ffd213;
 }
 
 .experienceContainer .experienceContent::-webkit-scrollbar-thumb {
@@ -452,7 +463,7 @@ main {
 
 .certificatesContainer .certificatesItemsContainer::-webkit-scrollbar-track {
   border-radius: 10px;
-  background-color: #f4a727;
+  background-color: #ffd213;
 }
 
 .certificatesContainer .certificatesItemsContainer .certificatesItemsContent {
@@ -526,6 +537,10 @@ main {
 
 /*queries 768px*/
 @media (min-width: 768px) {
+  header .menu .navContainer .menuContainer .menuDropdown .menuItem:hover {
+    -webkit-box-shadow: 768px 0 8px #ffffff inset;
+            box-shadow: 768px 0 8px #ffffff inset;
+  }
   .aboutContainer .aboutItems {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -565,6 +580,9 @@ main {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
     height: 60px;
   }
   header .menu .navContainer .menuContainer .menuDropdown .menuItem {

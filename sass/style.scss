@@ -80,6 +80,15 @@ header {
               color: $orange;
             }
           }
+          .menuLinkDownload {
+            background: $blue-blue;
+            color: $white;
+            text-transform: uppercase;
+            font-weight: bold;
+            padding: 8px 15px;
+            border-radius: 10px;
+            box-shadow: 2px 2px 4px $black;
+          }
         }
       }
     }
@@ -248,7 +257,7 @@ main {
     }
     &::-webkit-scrollbar-track:horizontal {
       border-radius: 10px;
-      background-color: $orange;
+      background-color: $yellow;
     }
     &::-webkit-scrollbar-thumb {
       background-color: $soft-grey;
@@ -362,7 +371,7 @@ main {
     }
     &::-webkit-scrollbar-track {
       border-radius: 10px;
-      background-color: $orange;
+      background-color: $yellow;
     }
     .certificatesItemsContent {
       padding: 0 15px;
@@ -421,6 +430,21 @@ main {
 }
 /*queries 768px*/
 @media (min-width: 768px) {
+  header {
+    .menu {
+      .navContainer {
+        .menuContainer {
+          .menuDropdown {
+            .menuItem {
+              &:hover {
+                box-shadow: 768px 0 8px $white inset;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
   .aboutContainer {
     .aboutItems {
       display: flex;
@@ -455,6 +479,7 @@ main {
           height: 60px;
           .menuDropdown {
             display: flex;
+            align-items: center;
             height: 60px;
             .menuItem {
               padding: 0 25px;
