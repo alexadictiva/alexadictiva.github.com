@@ -6,7 +6,7 @@ let overlay4 = document.createElement("div");
 function showModal1() {
   overlay.className = "overlay";
   overlay.id = "overlay";
-  let itemDescription = document.querySelector(".itemDescription");
+  let itemDescription = document.querySelector(".itemDescription1");
   itemDescription.style.display = "block";
   document.body.appendChild(overlay);
 }
@@ -32,8 +32,8 @@ function showModal4() {
   document.body.appendChild(overlay4);
 }
 
-function removeModal() {
-  itemDescription.style.display = "none";
+function removeModal1() {
+  itemDescription1.style.display = "none";
   document.body.removeChild(overlay);
 }
 function removeModal2() {
