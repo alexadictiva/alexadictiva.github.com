@@ -296,7 +296,7 @@ main {
   padding: 50px 0 70px;
   -webkit-clip-path: polygon(0 4%, 41% 0, 100% 5%, 100% 92%, 66% 100%, 0 91%);
           clip-path: polygon(0 4%, 41% 0, 100% 5%, 100% 92%, 66% 100%, 0 91%);
-  background-color: #ffd213;
+  background-color: #f4a727;
 }
 
 .experienceContainer .experienceTittle {
@@ -329,14 +329,13 @@ main {
 }
 
 .experienceContainer .experienceContent::-webkit-scrollbar-track:horizontal {
-  background: #c4c4c4;
   border-radius: 10px;
+  background-color: #f4a727;
 }
 
 .experienceContainer .experienceContent::-webkit-scrollbar-thumb {
-  background: #f4a727;
+  background-color: #c4c4c4;
   border-radius: 20px;
-  border: 1px solid #000000;
   -webkit-box-shadow: 2px 2px 8px #000000 inset;
           box-shadow: 2px 2px 8px #000000 inset;
 }
@@ -414,11 +413,7 @@ main {
 }
 
 .experienceContainer .experienceContent .experience5 {
-  background-image: url("../assets/img/experience1.jpg");
-}
-
-.experienceContainer .experienceContent .experience6 {
-  background-image: url("../assets/img/experience2.jpg");
+  background-image: url("../assets/img/experience5.jpg");
 }
 
 /*certificates*/
@@ -499,7 +494,7 @@ main {
 .footerContainer {
   -webkit-clip-path: polygon(50% 0%, 100% 9%, 100% 100%, 0 100%, 0 6%);
           clip-path: polygon(50% 0%, 100% 9%, 100% 100%, 0 100%, 0 6%);
-  background-color: #ffd213;
+  background-color: #f4a727;
   padding: 25px 0 40px;
 }
 
@@ -542,5 +537,53 @@ main {
 
 .footerContainer .footerContent .data .rrssContainer p {
   margin: 0 10px;
+}
+
+/*queries 768px*/
+@media (min-width: 768px) {
+  .aboutContainer .aboutItems {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: space-evenly;
+        -ms-flex-pack: space-evenly;
+            justify-content: space-evenly;
+  }
+  .aboutContainer .aboutItems .aboutItem .itemButton {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .aboutContainer .aboutItems .aboutItem .itemButton button {
+    margin-top: 15px;
+  }
+  .aboutContainer .aboutItems .aboutItem .itemDescription {
+    height: 50%;
+    width: 50%;
+  }
+}
+
+/*queries 1024px*/
+@media (min-width: 1024px) {
+  header .menu label {
+    display: none;
+  }
+  header .menu .navContainer {
+    position: static;
+  }
+  header .menu .navContainer .menuContainer {
+    width: auto;
+    height: 60px;
+  }
+  header .menu .navContainer .menuContainer .menuDropdown {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    height: 60px;
+  }
+  header .menu .navContainer .menuContainer .menuDropdown .menuItem {
+    padding: 0 25px;
+  }
 }
 /*# sourceMappingURL=style.css.map */

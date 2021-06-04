@@ -227,7 +227,7 @@ main {
 .experienceContainer {
   padding: 50px 0 70px;
   clip-path: polygon(0 4%, 41% 0, 100% 5%, 100% 92%, 66% 100%, 0 91%);
-  background-color: #ffd213;
+  background-color: $orange;
   .experienceTittle {
     margin-bottom: 20px;
     h2 {
@@ -250,13 +250,12 @@ main {
       height: 10px;
     }
     &::-webkit-scrollbar-track:horizontal {
-      background: $soft-grey;
       border-radius: 10px;
+      background-color: $orange;
     }
     &::-webkit-scrollbar-thumb {
-      background: $orange;
+      background-color: $soft-grey;
       border-radius: 20px;
-      border: 1px solid $black;
       box-shadow: 2px 2px 8px $black inset;
     }
 
@@ -323,10 +322,7 @@ main {
       background-image: url("../assets/img/experience4.jpg");
     }
     .experience5 {
-      background-image: url("../assets/img/experience1.jpg");
-    }
-    .experience6 {
-      background-image: url("../assets/img/experience2.jpg");
+      background-image: url("../assets/img/experience5.jpg");
     }
   }
 }
@@ -391,7 +387,7 @@ main {
 /*footer*/
 .footerContainer {
   clip-path: polygon(50% 0%, 100% 9%, 100% 100%, 0 100%, 0 6%);
-  background-color: $yellow;
+  background-color: $orange;
   padding: 25px 0 40px;
   .footerContent {
     .footerTittle {
@@ -421,6 +417,52 @@ main {
         justify-content: center;
         p {
           margin: 0 10px;
+        }
+      }
+    }
+  }
+}
+/*queries 768px*/
+@media (min-width: 768px) {
+  .aboutContainer {
+    .aboutItems {
+      display: flex;
+      justify-content: space-evenly;
+      .aboutItem {
+        .itemButton {
+          flex-direction: column;
+          button {
+            margin-top: 15px;
+          }
+        }
+        .itemDescription {
+          height: 50%;
+          width: 50%;
+        }
+      }
+    }
+  }
+}
+
+/*queries 1024px*/
+@media (min-width: 1024px) {
+  header {
+    .menu {
+      label {
+        display: none;
+      }
+      .navContainer {
+        position: static;
+        .menuContainer {
+          width: auto;
+          height: 60px;
+          .menuDropdown {
+            display: flex;
+            height: 60px;
+            .menuItem {
+              padding: 0 25px;
+            }
+          }
         }
       }
     }
