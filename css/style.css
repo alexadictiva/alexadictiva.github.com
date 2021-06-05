@@ -59,7 +59,7 @@ header .menu .menuBotton {
 
 header .menu .navContainer {
   position: absolute;
-  top: 60px;
+  top: 59px;
   right: -600px;
   -webkit-transition: all 0.5s ease-out;
   transition: all 0.5s ease-out;
@@ -80,7 +80,7 @@ header .menu .navContainer .menuContainer .menuDropdown {
 header .menu .navContainer .menuContainer .menuDropdown .menuItem {
   font-size: 1.7rem;
   line-height: 7rem;
-  padding: 0 0 0 30px;
+  padding: 0 0 0 10px;
   -webkit-transition: all 0.5s ease-in-out;
   transition: all 0.5s ease-in-out;
   cursor: pointer;
@@ -106,7 +106,7 @@ header .menu .navContainer .menuContainer .menuDropdown .menuLinkDownload {
   color: #ffffff;
   text-transform: uppercase;
   font-weight: bold;
-  padding: 8px 15px;
+  padding: 5px 8px;
   border-radius: 10px;
   -webkit-box-shadow: 2px 2px 4px #000000;
           box-shadow: 2px 2px 4px #000000;
@@ -209,9 +209,6 @@ main {
   cursor: pointer;
   width: 80px;
   height: 80px;
-  -webkit-box-shadow: 2px 2px 8px #000000;
-          box-shadow: 2px 2px 8px #000000;
-  border-radius: 50%;
 }
 
 .aboutContainer .aboutItems .aboutItem .itemButton label img {
@@ -544,6 +541,9 @@ main {
   .bannerContainer .bannerPicContainer img {
     height: 100%;
     width: auto;
+  }
+  .aboutContainer {
+    padding: 40px;
   }
   .aboutContainer .aboutItems {
     display: -webkit-box;
