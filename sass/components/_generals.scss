@@ -1,0 +1,22 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+:root {
+  font-size: 62.5%;
+}
+body {
+  overflow-x: hidden;
+  font-family: sans-serif;
+}
+main {
+  position: relative;
+  padding-top: 59.5px;
+}
+ul {
+  list-style: none;
+}
+a {
+  text-decoration: none;
+}

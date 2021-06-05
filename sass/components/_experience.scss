@@ -1,0 +1,102 @@
+.experienceContainer {
+  padding: 50px 0 70px;
+  clip-path: polygon(0 4%, 41% 0, 100% 5%, 100% 92%, 66% 100%, 0 91%);
+  background-color: $orange;
+  .experienceTittle {
+    margin-bottom: 20px;
+    h2 {
+      text-align: center;
+      font-size: 1.7rem;
+      line-height: 2.7rem;
+      text-transform: uppercase;
+    }
+  }
+  .experienceContent {
+    width: 100%;
+    margin-top: 10px;
+    padding: 15px 0;
+    display: flex;
+    overflow-x: scroll;
+    &::-webkit-scrollbar {
+      -webkit-appearance: none;
+    }
+    &::-webkit-scrollbar:horizontal {
+      height: 10px;
+    }
+    &::-webkit-scrollbar-track:horizontal {
+      border-radius: 10px;
+      background-color: $yellow;
+    }
+    &::-webkit-scrollbar-thumb {
+      background-color: $soft-grey;
+      border-radius: 20px;
+      box-shadow: 2px 2px 8px $black inset;
+    }
+
+    .experienceItem {
+      margin: 0 15px;
+      min-width: 280px;
+      height: 460px;
+      border-radius: 10px;
+      position: relative;
+      box-shadow: 2px 2px 8px $black;
+      .hoverOverlay {
+        height: 45%;
+        width: 100%;
+        border-bottom-left-radius: 10px;
+        border-bottom-right-radius: 10px;
+        position: absolute;
+        bottom: 0;
+        background: hsla(100, 0%, 0%, 0.9);
+        padding: 15px 10px 10px;
+        box-sizing: border-box;
+        display: none;
+        h3 {
+          color: $white;
+          font-size: 1.7rem;
+          margin-bottom: 10px;
+        }
+        p {
+          a {
+            display: block;
+            color: $white;
+            font-size: 1.4rem;
+            line-height: 1.9rem;
+            padding: 3px 8px;
+            border-radius: 50px;
+            border: $white 1px solid;
+            margin-bottom: 10px;
+          }
+        }
+      }
+      &:hover > .hoverOverlay {
+        display: block;
+      }
+    }
+    .experience1,
+    .experience2,
+    .experience3,
+    .experience4,
+    .experience5,
+    .experience6 {
+      background-position: center 0;
+      background-repeat: no-repeat;
+      background-size: cover;
+    }
+    .experience1 {
+      background-image: url("../assets/img/experience1.jpg");
+    }
+    .experience2 {
+      background-image: url("../assets/img/experience2.jpg");
+    }
+    .experience3 {
+      background-image: url("../assets/img/experience3.jpg");
+    }
+    .experience4 {
+      background-image: url("../assets/img/experience4.jpg");
+    }
+    .experience5 {
+      background-image: url("../assets/img/experience5.jpg");
+    }
+  }
+}

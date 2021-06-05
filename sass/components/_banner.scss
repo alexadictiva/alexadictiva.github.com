@@ -1,0 +1,24 @@
+.bannerContainer {
+  height: 70vh;
+  display: flex;
+
+  clip-path: polygon(0 0, 100% 0, 100% 100%, 0 81%);
+  background-color: $orange;
+  .bannerPicContainer {
+    width: 70%;
+
+    img {
+      width: 100%;
+    }
+  }
+  .bannerTittle {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    h1 {
+      font-size: 3rem;
+      line-height: 2.3rem;
+      margin-bottom: 10px;
+    }
+  }
+}
