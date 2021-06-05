@@ -128,9 +128,6 @@ main {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
   -webkit-clip-path: polygon(0 0, 100% 0, 100% 100%, 0 81%);
           clip-path: polygon(0 0, 100% 0, 100% 100%, 0 81%);
   background-color: #f4a727;
@@ -138,7 +135,6 @@ main {
 
 .bannerContainer .bannerPicContainer {
   width: 70%;
-  padding-top: 40px;
 }
 
 .bannerContainer .bannerPicContainer img {
@@ -541,6 +537,14 @@ main {
     -webkit-box-shadow: 768px 0 8px #ffffff inset;
             box-shadow: 768px 0 8px #ffffff inset;
   }
+  .bannerContainer .bannerPicContainer {
+    width: 50%;
+    padding-left: 40px;
+  }
+  .bannerContainer .bannerPicContainer img {
+    height: 100%;
+    width: auto;
+  }
   .aboutContainer .aboutItems {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -587,6 +591,7 @@ main {
   }
   header .menu .navContainer .menuContainer .menuDropdown .menuItem {
     padding: 0 25px;
+    line-height: 5rem;
   }
 }
 /*# sourceMappingURL=style.css.map */

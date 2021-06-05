@@ -108,12 +108,12 @@ main {
 .bannerContainer {
   height: 70vh;
   display: flex;
-  align-items: center;
+
   clip-path: polygon(0 0, 100% 0, 100% 100%, 0 81%);
   background-color: $orange;
   .bannerPicContainer {
     width: 70%;
-    padding-top: 40px;
+
     img {
       width: 100%;
     }
@@ -445,6 +445,16 @@ main {
       }
     }
   }
+  .bannerContainer {
+    .bannerPicContainer {
+      width: 50%;
+      padding-left: 40px;
+      img {
+        height: 100%;
+        width: auto;
+      }
+    }
+  }
   .aboutContainer {
     .aboutItems {
       display: flex;
@@ -483,6 +493,7 @@ main {
             height: 60px;
             .menuItem {
               padding: 0 25px;
+              line-height: 5rem;
             }
           }
         }
