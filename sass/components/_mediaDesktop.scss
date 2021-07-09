@@ -6,12 +6,14 @@
       }
       .navContainer {
         position: static;
+        width: 100%;
         .menuContainer {
           width: auto;
           height: 60px;
           .menuDropdown {
             display: flex;
             align-items: center;
+            justify-content: center;
             height: 60px;
             .menuItem {
               padding: 0 25px;

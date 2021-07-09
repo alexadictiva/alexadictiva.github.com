@@ -220,6 +220,11 @@ header .menu .menuBotton:checked ~ .navContainer {
   cursor: pointer;
 }
 
+.aboutContainer .aboutItems .aboutItem .itemButton button span {
+  padding-left: 10px;
+  color: #454545;
+}
+
 .aboutContainer .aboutItems .aboutItem .itemDescription {
   background: #f4a727;
   padding: 20px;
@@ -400,6 +405,10 @@ header .menu .menuBotton:checked ~ .navContainer {
   background-image: url("../assets/img/experience5.jpg");
 }
 
+.experienceContainer .experienceContent .experience6 {
+  background-image: url("../assets/img/experience6.jpg");
+}
+
 .certificatesContainer {
   overflow-x: hidden;
   padding-bottom: 20px;
@@ -567,6 +576,7 @@ header .menu .menuBotton:checked ~ .navContainer {
   }
   header .menu .navContainer {
     position: static;
+    width: 100%;
   }
   header .menu .navContainer .menuContainer {
     width: auto;
@@ -579,6 +589,9 @@ header .menu .menuBotton:checked ~ .navContainer {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
     height: 60px;
   }
   header .menu .navContainer .menuContainer .menuDropdown .menuItem {
