@@ -78,7 +78,10 @@
     .experience3,
     .experience4,
     .experience5,
-    .experience6 {
+    .experience6,
+    .experience7,
+    .experience8,
+    .experience9 {
       background-position: center 0;
       background-repeat: no-repeat;
       background-size: cover;
@@ -100,6 +103,15 @@
     }
     .experience6 {
       background-image: url("../assets/img/experience6.jpg");
+    }
+    .experience7 {
+      background-image: url("../assets/img/experience7.jpg");
+    }
+    .experience8 {
+      background-image: url("../assets/img/experience8.jpg");
+    }
+    .experience9 {
+      background-image: url("../assets/img/experience9.jpg");
     }
   }
 }
