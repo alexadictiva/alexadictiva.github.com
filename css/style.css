@@ -1,6 +1,5 @@
 * {
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
   margin: 0;
   padding: 0;
 }
@@ -34,76 +33,54 @@ header {
   position: fixed;
   z-index: 20;
 }
-
 header .menu {
   height: 100%;
   width: 100%;
   position: relative;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: end;
-      -ms-flex-pack: end;
-          justify-content: flex-end;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  justify-content: flex-end;
+  align-items: center;
   z-index: 10;
 }
-
 header .menu label {
   padding: 0 30px;
   cursor: pointer;
 }
-
 header .menu .menuBotton {
   display: none;
 }
-
 header .menu .navContainer {
   position: absolute;
   top: 59px;
   right: -600px;
-  -webkit-transition: all 0.5s ease-out;
   transition: all 0.5s ease-out;
 }
-
 header .menu .navContainer .menuContainer {
   height: 100vh;
-  width: 50vw;
-  /*baja el ipad view a 40vw*/
+  width: 50vw; /*baja el ipad view a 40vw*/
   background-color: #ffd213;
 }
-
 header .menu .navContainer .menuContainer .menuDropdown {
   height: 100vh;
   color: #000000;
 }
-
 header .menu .navContainer .menuContainer .menuDropdown .menuItem {
   font-size: 1.7rem;
   line-height: 7rem;
   padding: 0 0 0 10px;
-  -webkit-transition: all 0.5s ease-in-out;
   transition: all 0.5s ease-in-out;
   cursor: pointer;
 }
-
 header .menu .navContainer .menuContainer .menuDropdown .menuItem .menuLink {
   color: #000000;
-  -webkit-transition: all 0.5s ease-in-out;
   transition: all 0.5s ease-in-out;
 }
-
 header .menu .navContainer .menuContainer .menuDropdown .menuItem:hover {
-  -webkit-box-shadow: 250px 0 8px #ffffff inset;
-          box-shadow: 250px 0 8px #ffffff inset;
+  box-shadow: 250px 0 8px #ffffff inset;
 }
-
 header .menu .navContainer .menuContainer .menuDropdown .menuItem:hover > .menuLink {
   color: #f4a727;
 }
-
 header .menu .navContainer .menuContainer .menuDropdown .menuLinkDownload {
   background: #2ca8f2;
   color: #ffffff;
@@ -111,45 +88,29 @@ header .menu .navContainer .menuContainer .menuDropdown .menuLinkDownload {
   font-weight: bold;
   padding: 5px 8px;
   border-radius: 10px;
-  -webkit-box-shadow: 2px 2px 4px #000000;
-          box-shadow: 2px 2px 4px #000000;
+  box-shadow: 2px 2px 4px #000000;
 }
-
 header .menu .menuBotton:checked ~ .navContainer {
   right: 0;
 }
 
 .bannerContainer {
   height: 70vh;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-clip-path: polygon(0 0, 100% 0, 100% 100%, 0 81%);
-          clip-path: polygon(0 0, 100% 0, 100% 100%, 0 81%);
+  clip-path: polygon(0 0, 100% 0, 100% 100%, 0 81%);
   background-color: #f4a727;
 }
-
 .bannerContainer .bannerPicContainer {
   width: 70%;
 }
-
 .bannerContainer .bannerPicContainer img {
   width: 100%;
 }
-
 .bannerContainer .bannerTittle {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  flex-direction: column;
+  justify-content: center;
 }
-
 .bannerContainer .bannerTittle h1 {
   font-size: 3rem;
   line-height: 2.3rem;
@@ -162,7 +123,7 @@ header .menu .menuBotton:checked ~ .navContainer {
 .overlay4 {
   width: 100%;
   height: 100%;
-  background: rgba(0, 0, 0, 0.5);
+  background: hsla(0, 0%, 0%, 0.5);
   position: fixed;
   top: 0;
   left: 0;
@@ -172,45 +133,33 @@ header .menu .menuBotton:checked ~ .navContainer {
 .aboutContainer {
   padding: 0;
 }
-
 .aboutContainer .aboutTittle {
   margin-bottom: 20px;
 }
-
 .aboutContainer .aboutTittle h2 {
   text-align: center;
   font-size: 1.7rem;
   line-height: 2.7rem;
 }
-
 .aboutContainer .aboutItems {
   padding: 10px;
 }
-
 .aboutContainer .aboutItems .aboutItem {
   padding: 20px;
 }
-
 .aboutContainer .aboutItems .aboutItem .itemButton {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  align-items: center;
 }
-
 .aboutContainer .aboutItems .aboutItem .itemButton label {
   cursor: pointer;
   width: 80px;
   height: 80px;
 }
-
 .aboutContainer .aboutItems .aboutItem .itemButton label img {
   width: 80px;
   height: auto;
 }
-
 .aboutContainer .aboutItems .aboutItem .itemButton button {
   padding: 0 15px;
   text-transform: uppercase;
@@ -219,20 +168,17 @@ header .menu .menuBotton:checked ~ .navContainer {
   border: 0;
   cursor: pointer;
 }
-
 .aboutContainer .aboutItems .aboutItem .itemButton button span {
   padding-left: 10px;
   color: #454545;
 }
-
 .aboutContainer .aboutItems .aboutItem .itemDescription {
   background: #f4a727;
   padding: 20px;
   height: 80%;
   width: 80%;
   border-radius: 10px;
-  -webkit-box-shadow: 2px 2px 8px #000000;
-          box-shadow: 2px 2px 8px #000000;
+  box-shadow: 2px 2px 8px #000000;
   display: none;
   position: fixed;
   margin: auto;
@@ -241,25 +187,17 @@ header .menu .menuBotton:checked ~ .navContainer {
   left: 0;
   right: 0;
   z-index: 35;
-  -webkit-transition-delay: 5s;
-          transition-delay: 5s;
+  transition-delay: 5s;
 }
-
 .aboutContainer .aboutItems .aboutItem .itemDescription .itemDescriptionCloseButton {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: end;
-      -ms-flex-pack: end;
-          justify-content: flex-end;
+  justify-content: flex-end;
   width: 100%;
   padding-bottom: 10px;
 }
-
 .aboutContainer .aboutItems .aboutItem .itemDescription .itemDescriptionCloseButton button {
   border: black 2px solid;
-  -webkit-box-shadow: 2px 2px 8px #000000;
-          box-shadow: 2px 2px 8px #000000;
+  box-shadow: 2px 2px 8px #000000;
   border-radius: 50%;
   width: 30px;
   height: 30px;
@@ -268,12 +206,10 @@ header .menu .menuBotton:checked ~ .navContainer {
   font-weight: bold;
   cursor: pointer;
 }
-
 .aboutContainer .aboutItems .aboutItem .itemDescription .itemDescriptionParagraph h3 {
   font-size: 1.8rem;
   text-transform: uppercase;
 }
-
 .aboutContainer .aboutItems .aboutItem .itemDescription .itemDescriptionParagraph p {
   margin-top: 20px;
   color: white;
@@ -283,62 +219,48 @@ header .menu .menuBotton:checked ~ .navContainer {
 
 .experienceContainer {
   padding: 50px 0 70px;
-  -webkit-clip-path: polygon(0 4%, 41% 0, 100% 5%, 100% 92%, 66% 100%, 0 91%);
-          clip-path: polygon(0 4%, 41% 0, 100% 5%, 100% 92%, 66% 100%, 0 91%);
+  clip-path: polygon(0 4%, 41% 0, 100% 5%, 100% 92%, 66% 100%, 0 91%);
   background-color: #f4a727;
 }
-
 .experienceContainer .experienceTittle {
   margin-bottom: 20px;
 }
-
 .experienceContainer .experienceTittle h2 {
   text-align: center;
   font-size: 1.7rem;
   line-height: 2.7rem;
   text-transform: uppercase;
 }
-
 .experienceContainer .experienceContent {
   width: 100%;
   margin-top: 10px;
   padding: 15px 0;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
   overflow-x: scroll;
 }
-
 .experienceContainer .experienceContent::-webkit-scrollbar {
   -webkit-appearance: none;
 }
-
 .experienceContainer .experienceContent::-webkit-scrollbar:horizontal {
   height: 10px;
 }
-
 .experienceContainer .experienceContent::-webkit-scrollbar-track:horizontal {
   border-radius: 10px;
   background-color: #ffd213;
 }
-
 .experienceContainer .experienceContent::-webkit-scrollbar-thumb {
   background-color: #c4c4c4;
   border-radius: 20px;
-  -webkit-box-shadow: 2px 2px 8px #000000 inset;
-          box-shadow: 2px 2px 8px #000000 inset;
+  box-shadow: 2px 2px 8px #000000 inset;
 }
-
 .experienceContainer .experienceContent .experienceItem {
   margin: 0 15px;
   min-width: 280px;
   height: 460px;
   border-radius: 10px;
   position: relative;
-  -webkit-box-shadow: 2px 2px 8px #000000;
-          box-shadow: 2px 2px 8px #000000;
+  box-shadow: 2px 2px 8px #000000;
 }
-
 .experienceContainer .experienceContent .experienceItem .hoverOverlay {
   height: 45%;
   width: 100%;
@@ -346,19 +268,16 @@ header .menu .menuBotton:checked ~ .navContainer {
   border-bottom-right-radius: 10px;
   position: absolute;
   bottom: 0;
-  background: rgba(0, 0, 0, 0.9);
+  background: hsla(100, 0%, 0%, 0.9);
   padding: 15px 10px 10px;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
   display: none;
 }
-
 .experienceContainer .experienceContent .experienceItem .hoverOverlay h3 {
   color: #ffffff;
   font-size: 1.7rem;
   margin-bottom: 10px;
 }
-
 .experienceContainer .experienceContent .experienceItem .hoverOverlay p a {
   display: block;
   color: #ffffff;
@@ -369,171 +288,147 @@ header .menu .menuBotton:checked ~ .navContainer {
   border: #ffffff 1px solid;
   margin-bottom: 10px;
 }
-
 .experienceContainer .experienceContent .experienceItem:hover > .hoverOverlay {
   display: block;
 }
-
 .experienceContainer .experienceContent .experience1,
 .experienceContainer .experienceContent .experience2,
 .experienceContainer .experienceContent .experience3,
 .experienceContainer .experienceContent .experience4,
 .experienceContainer .experienceContent .experience5,
-.experienceContainer .experienceContent .experience6 {
+.experienceContainer .experienceContent .experience6,
+.experienceContainer .experienceContent .experience7,
+.experienceContainer .experienceContent .experience8,
+.experienceContainer .experienceContent .experience9,
+.experienceContainer .experienceContent .experience10 {
   background-position: center 0;
   background-repeat: no-repeat;
   background-size: cover;
 }
-
 .experienceContainer .experienceContent .experience1 {
   background-image: url("../assets/img/experience1.jpg");
 }
-
 .experienceContainer .experienceContent .experience2 {
   background-image: url("../assets/img/experience2.jpg");
 }
-
 .experienceContainer .experienceContent .experience3 {
   background-image: url("../assets/img/experience3.jpg");
 }
-
 .experienceContainer .experienceContent .experience4 {
   background-image: url("../assets/img/experience4.jpg");
 }
-
 .experienceContainer .experienceContent .experience5 {
   background-image: url("../assets/img/experience5.jpg");
 }
-
 .experienceContainer .experienceContent .experience6 {
   background-image: url("../assets/img/experience6.jpg");
+}
+.experienceContainer .experienceContent .experience7 {
+  background-image: url("../assets/img/experience7.jpg");
+}
+.experienceContainer .experienceContent .experience8 {
+  background-image: url("../assets/img/experience8.jpg");
+}
+.experienceContainer .experienceContent .experience9 {
+  background-image: url("../assets/img/experience9.jpg");
+}
+.experienceContainer .experienceContent .experience10 {
+  background-image: url("../assets/img/experience10.jpg");
 }
 
 .certificatesContainer {
   overflow-x: hidden;
   padding-bottom: 20px;
 }
-
 .certificatesContainer .certificatesTittle {
   margin-top: 20px;
   padding: 20px;
 }
-
 .certificatesContainer .certificatesTittle h2 {
   text-align: center;
   font-size: 1.8rem;
   text-transform: uppercase;
 }
-
 .certificatesContainer .certificatesItemsContainer {
   width: 100vw;
   overflow-x: scroll;
 }
-
 .certificatesContainer .certificatesItemsContainer::-webkit-scrollbar {
   -webkit-appearance: none;
 }
-
 .certificatesContainer .certificatesItemsContainer::-webkit-scrollbar:vertical {
   width: 10px;
 }
-
 .certificatesContainer .certificatesItemsContainer::-webkit-scrollbar-button:increment {
   display: none;
 }
-
 .certificatesContainer .certificatesItemsContainer::-webkit-scrollbar-button {
   display: none;
 }
-
 .certificatesContainer .certificatesItemsContainer::-webkit-scrollbar:horizontal {
   height: 10px;
 }
-
 .certificatesContainer .certificatesItemsContainer::-webkit-scrollbar-thumb {
   background-color: #c4c4c4;
   border-radius: 20px;
-  -webkit-box-shadow: 2px 2px 8px #000000 inset;
-          box-shadow: 2px 2px 8px #000000 inset;
+  box-shadow: 2px 2px 8px #000000 inset;
 }
-
 .certificatesContainer .certificatesItemsContainer::-webkit-scrollbar-track {
   border-radius: 10px;
   background-color: #ffd213;
 }
-
 .certificatesContainer .certificatesItemsContainer .certificatesItemsContent {
   padding: 0 15px;
   width: 100vw;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
 }
-
 .certificatesContainer .certificatesItemsContainer .certificatesItemsContent .certificateItem {
   margin: 20px 10px;
 }
-
 .certificatesContainer .certificatesItemsContainer .certificatesItemsContent .certificateItem img {
   width: 280px;
   height: auto;
   border-radius: 10px;
-  -webkit-box-shadow: 2px 2px 8px black;
-          box-shadow: 2px 2px 8px black;
+  box-shadow: 2px 2px 8px black;
 }
 
 .footerContainer {
-  -webkit-clip-path: polygon(50% 0%, 100% 9%, 100% 100%, 0 100%, 0 6%);
-          clip-path: polygon(50% 0%, 100% 9%, 100% 100%, 0 100%, 0 6%);
+  clip-path: polygon(50% 0%, 100% 9%, 100% 100%, 0 100%, 0 6%);
   background-color: #f4a727;
   padding: 25px 0 40px;
 }
-
 .footerContainer .footerContent .footerTittle {
   margin-bottom: 40px;
 }
-
 .footerContainer .footerContent .footerTittle h2 {
   text-align: center;
   font-size: 1.8rem;
   text-transform: uppercase;
 }
-
 .footerContainer .footerContent .data .emailContainer {
   margin-bottom: 40px;
 }
-
 .footerContainer .footerContent .data .emailContainer p {
   text-align: center;
   font-size: 1.5rem;
   text-transform: uppercase;
 }
-
 .footerContainer .footerContent .data .emailContainer p a {
   color: #000000;
   font-weight: bold;
 }
-
 .footerContainer .footerContent .data .rrssContainer {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: baseline;
-      -ms-flex-align: baseline;
-          align-items: baseline;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  align-items: baseline;
+  justify-content: center;
 }
-
 .footerContainer .footerContent .data .rrssContainer p {
   margin: 0 10px;
 }
 
 @media (min-width: 768px) {
   header .menu .navContainer .menuContainer .menuDropdown .menuItem:hover {
-    -webkit-box-shadow: 768px 0 8px #ffffff inset;
-            box-shadow: 768px 0 8px #ffffff inset;
+    box-shadow: 768px 0 8px #ffffff inset;
   }
   .bannerContainer .bannerPicContainer {
     width: 50%;
@@ -548,18 +443,11 @@ header .menu .menuBotton:checked ~ .navContainer {
     padding: 40px;
   }
   .aboutContainer .aboutItems {
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
-    -webkit-box-pack: space-evenly;
-        -ms-flex-pack: space-evenly;
-            justify-content: space-evenly;
+    justify-content: space-evenly;
   }
   .aboutContainer .aboutItems .aboutItem .itemButton {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
+    flex-direction: column;
   }
   .aboutContainer .aboutItems .aboutItem .itemButton button {
     margin-top: 15px;
@@ -569,7 +457,6 @@ header .menu .menuBotton:checked ~ .navContainer {
     width: 50%;
   }
 }
-
 @media (min-width: 1024px) {
   header .menu label {
     display: none;
@@ -583,15 +470,9 @@ header .menu .menuBotton:checked ~ .navContainer {
     height: 60px;
   }
   header .menu .navContainer .menuContainer .menuDropdown {
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
+    align-items: center;
+    justify-content: center;
     height: 60px;
   }
   header .menu .navContainer .menuContainer .menuDropdown .menuItem {
@@ -599,4 +480,3 @@ header .menu .menuBotton:checked ~ .navContainer {
     line-height: 5rem;
   }
 }
-/*# sourceMappingURL=style.css.map */
